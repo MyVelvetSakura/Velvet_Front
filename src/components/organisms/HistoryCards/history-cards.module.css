@@ -1,0 +1,26 @@
+.card {
+    display: flex;
+    flex-wrap: wrap;    
+    gap: 20px;          
+    justify-content: left;
+    padding: 20px;
+    padding-left: 100px;
+}
+.drop_btn{
+    display:flex;
+    width: 100%;
+    justify-content: center;
+    padding: 20px;
+}
+.no_cards{
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 30px;
+    padding-top: 20px;
+    align-items: center;
+}
+.img_no_cards {
+    border-radius: 10%;
+    width: 20rem;
+}

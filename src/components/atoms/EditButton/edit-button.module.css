@@ -1,0 +1,11 @@
+.penIcon {
+    width: 20px;         
+    height: 20px;
+    border: none;
+    background-color: transparent;
+    background-image: url('../../../assets/images/pen1.png'); 
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    padding: 0;
+}

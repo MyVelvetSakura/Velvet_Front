@@ -1,0 +1,60 @@
+{
+  "accounts": [
+    {
+      "id": "4e06",
+      "name": "Jenny",
+      "email": "patata1@hotmail.com",
+      "password": "12345678"
+    },
+    {
+      "id": "dcfa",
+      "name": "prueba2",
+      "email": "pruebita@hotmail.com",
+      "password": "12345678"
+    },
+    {
+      "id": "5a97",
+      "name": "Carla",
+      "email": "Carla@hotmail.com",
+      "password": "12345678"
+    }
+  ],
+  "readings": [
+    {
+      "id": "4ac9f9a5-0600-4bf3-9828-ae03a3879c86",
+      "userId": "4e06",
+      "date": "15 de enero 2026, 20:28",
+      "name": "pequeño/dormir/aro",
+      "pastCardId": "26",
+      "presentCardId": "24",
+      "futureCardId": "23"
+    },
+    {
+      "id": "25271a0d-41d0-4e20-9e90-bce3cc3bf0a6",
+      "userId": "4e06",
+      "date": "16 de enero 2026, 08:05",
+      "name": "partida1",
+      "pastCardId": "55",
+      "presentCardId": "54",
+      "futureCardId": "53"
+    },
+    {
+      "id": "6b9cc883-8d8a-4ca1-8430-85e3f3f45791",
+      "userId": "4e06",
+      "date": "16 de enero 2026, 10:37",
+      "name": "fallo Api",
+      "pastCardId": "55",
+      "presentCardId": "54",
+      "futureCardId": "53"
+    },
+    {
+      "id": "98fa2710-6725-410f-9937-6c60d4782529",
+      "userId": "4e06",
+      "date": "16 de enero 2026, 12:39",
+      "name": "tirada1",
+      "pastCardId": "27",
+      "presentCardId": "24",
+      "futureCardId": "21"
+    }
+  ]
+}

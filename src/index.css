@@ -1,0 +1,102 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-sky-blue: #e6f7ff;
+  --color-sakura-pink: #f9e6f1;
+  --color-petal-yellow: #f3f7d9;
+
+  --color-star-yellow: #fff1b8;
+  --color-magic-pink: #ffd6e7;
+  --color-mint-glow: #e7f5f0;
+
+  --color-cream-white: rgba(255, 255, 255, 0.8);
+  --color-border-soft: rgba(0, 0, 0, 0.1);
+  --color-shadow-soft: rgba(0, 0, 0, 0.05);
+
+  --color-text: #222;
+  --color-accent-glow: rgba(
+    255,
+    214,
+    231,
+    0.7
+  ); /* brillo mágico, basado en tu magic-pink */
+
+  --font-primary: "Poppins", system-ui, sans-serif;
+
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+
+  --transition-soft: all 0.3s ease;
+  --color-btn-bg: linear-gradient(90deg, #ffe08c, #ffb4d5);
+  --color-btn-text: #2b2540;
+  --color-btn-border: rgba(0, 0, 0, 0.15);
+  --color-btn-text-hover: #2b2540;
+  --color-btn-bg-hover: linear-gradient(to right, #e7f5f0, #f3c0c0);
+  --color-btn-bg-active: radial-gradient(circle, #ffd6e7, #e6f7ff);
+}
+
+/* --- Tema Clow: variante oscura, misma estructura de variables --- */
+[data-theme="clow"] {
+  --color-sky-blue: #14121f;
+  --color-sakura-pink: #1c1626;
+  --color-petal-yellow: #201a2b;
+
+  --color-star-yellow: #6b4fd6;
+  --color-magic-pink: #4a3a8f;
+  --color-mint-glow: #241d33;
+
+  --color-cream-white: rgba(20, 16, 30, 0.85);
+  --color-border-soft: rgba(255, 255, 255, 0.12);
+  --color-shadow-soft: rgba(0, 0, 0, 0.5);
+
+  --color-text: #e8e3f5;
+  --color-accent-glow: rgba(107, 79, 214, 0.75);
+  --color-btn-bg: linear-gradient(90deg, #6b4fd6, #4a3a8f);
+  --color-btn-text: #f0eaff;
+  --color-btn-border: rgba(255, 255, 255, 0.2);
+  --color-btn-text-hover: #2b2540;
+    
+ --color-btn-bg-hover: linear-gradient(to right, #3a2f5c, #5c3a6b);
+  --color-btn-bg-active: radial-gradient(circle, #2a1f45, #1a1530);
+}
+
+body {
+  background: linear-gradient(
+    180deg,
+    var(--color-sky-blue),
+    var(--color-sakura-pink),
+    var(--color-petal-yellow)
+  );
+  color: var(--color-text);
+  min-height: 100vh;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  position: relative;
+  transition:
+    background 0.6s ease,
+    color 0.6s ease;
+}
+
+.sakura {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .sakura {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: block;
+    z-index: -1;
+  }
+}

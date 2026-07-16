@@ -1,0 +1,18 @@
+.toast {
+  padding: 0.9rem 1.4rem;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 0.95rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  cursor: pointer;
+  animation: slideIn 0.25s ease-out;
+}
+
+.success { background-color: #4caf50; }
+.error   { background-color: #d9534f; }
+.info    { background-color: #534AB7; }
+
+@keyframes slideIn {
+  from { transform: translateX(100%); opacity: 0; }
+  to   { transform: translateX(0); opacity: 1; }
+}

@@ -1,0 +1,42 @@
+.subm_btn{
+    width:173px;
+    height: 54px;
+    border-radius: 20px;
+    border:1px solid rgba(0, 0, 0,0.10) ;
+    background: linear-gradient(to right, #FFF1B8, #FFD6E7);
+    font-size: 16px;
+    font-weight: bold;
+    transition: transform 0.25s ease;
+    cursor: pointer;
+}
+
+.subm_btn:hover{
+    background: linear-gradient(to right, #E7F5F0, #F3C0C0);
+    transform: scale(1.08);
+
+}
+
+.subm_btn:active {
+    background: radial-gradient(circle, #FFD6E7, #E6F7FF);
+    transform: scale(0.97);
+}
+
+.reset_btn{
+    width:173px;
+    height:54px;
+    border-radius:20px;
+    border: 2px dashed rgba(0, 0, 0,0.10);
+    background: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: transform 0.25s ease;
+    cursor: pointer;
+}
+
+.reset_btn:hover{
+    transform: scale(1.08);
+}
+
+.reset_btn:active{
+    border-color: black;
+}

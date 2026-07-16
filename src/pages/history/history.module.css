@@ -1,0 +1,22 @@
+
+.header_section{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding-left: 50px;
+}
+
+.edit_user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+}
+@media (min-width:890px){
+    .header_section{
+        flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    padding-left: 50px;
+}
+}

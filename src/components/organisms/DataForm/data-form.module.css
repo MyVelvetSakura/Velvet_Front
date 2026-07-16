@@ -1,0 +1,47 @@
+.data_card{
+    width:80%;
+    background-color: #FFF1B8;
+    border-radius: 20px;
+    margin:0 auto;
+    padding:60px 20px 10px 50px;
+    position: relative;
+    line-height: 50px;
+}
+
+.avatar{
+    position: absolute;
+    left:40%;
+    top:10px;
+}
+
+.title_data{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+ul{
+    list-style: none;    
+}
+
+li{
+    margin-left: -30px;
+}
+
+.field_btnResults{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+
+@media (min-width:1200px){
+.data_card{
+    width:40%;
+    padding:40px 20px 10px 50px;
+}
+
+.avatar{
+    left:85%;
+    top:10px;
+}
+}

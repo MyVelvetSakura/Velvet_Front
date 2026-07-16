@@ -1,0 +1,163 @@
+.desktop_section {
+  display: none;
+}
+
+.deck_section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+.shuffle_btn {
+    padding: 12px 24px;
+    border-radius: var(--radius-md);
+    background: linear-gradient(to right, var(--color-star-yellow), var(--color-magic-pink));
+    border: 1px solid var(--color-border-soft);
+    font-weight: bold;
+    font-family: var(--font-primary);
+    cursor: pointer;
+    transition: var(--transition-soft);
+    box-shadow: 0 4px 10px var(--color-shadow-soft);
+}
+
+.shuffle_btn:hover {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+}
+
+.stacked_deck_container {
+    position: relative;
+    width: 128px;
+    height: 271px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 1000px;
+}
+
+.card_stacked {
+    position: absolute;
+    width: 128px;
+    height: 271px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 0.5px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+    transform:
+      rotateX(5deg)
+      translateY(calc(-0.5px * var(--i)));
+    z-index: var(--i);
+}
+
+.card_stacked img {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+.card_ghost {
+    opacity: 0;
+    transform: translateY(-80px) scale(0.7);
+    filter: blur(2px);
+    transition: transform 0.4s ease-out, opacity 0.3s ease-out, filter 0.3s ease;
+    pointer-events: none;
+    z-index: 100;
+}
+
+.shuffling_flash {
+    animation: magicFlash 0.5s ease-in-out;
+}
+
+@keyframes magicFlash {
+    0% { filter: brightness(1); transform: scale(1); }
+    50% {
+        filter: brightness(2) drop-shadow(0 0 20px var(--color-magic-pink));
+        transform: scale(1.02) rotate(1deg);
+    }
+    100% { filter: brightness(1); transform: scale(1); }
+}
+
+@media (min-width: 1200px) {
+    .desktop_section{
+        display: block;
+    }
+
+    .mobile_section{
+        display:none;
+    }
+
+.banner {
+  width: 100%;
+  height: 300px;
+  text-align: center;
+  position: relative;
+}
+
+.banner .deck_desktop {
+  position: absolute;
+  width: 200px;
+  height: 250px;
+  top: 10%;
+  left: calc(50% - 100px);
+  transform-style: preserve-3d;
+  transform: translateX(-50%);
+  animation: auto-rotate 20s linear infinite;
+  z-index: 2;
+  
+}
+
+@keyframes auto-rotate {
+  from {
+    transform: perspective(1000px) rotateX(-16deg) rotateY(0deg);
+  }
+  to {
+    transform: perspective(1000px) rotateX(-16deg) rotateY(360deg);
+  }
+}
+
+.banner .deck_desktop .deck_card {
+  margin-top:50px;
+  position: absolute;
+  transform: rotateY(
+      calc((var(--position) - 1) * (360 / var(--quantity) * 1deg))
+    )
+    translateZ(2000px);
+  transition: all 0.3s linear;
+}
+
+.deck_card img{
+border-radius: 10px;
+}
+.banner .deck_desktop:hover {
+  animation-play-state: paused;
+}
+
+.banner .deck_desktop .deck_card:hover {
+  transform: rotateY(
+      calc((var(--position) - 1) * (360 / var(--quantity) * 1deg))
+    )
+    rotateX(10deg) translateZ(25dvw) scale(1.2);
+  transform-origin: center;
+  z-index: 1;
+  cursor: pointer;
+}
+
+
+@keyframes floating {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(50px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+}

@@ -1,0 +1,72 @@
+.sakuraLayer,
+.clowLayer {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.petal {
+  position: absolute;
+  top: -50px;
+  width: 16px;
+  height: 16px;
+  background: url("../../../assets/images/loading/petals.png");
+  background-size: cover;
+  animation: fall linear infinite;
+}
+
+@keyframes fall {
+  0%   { transform: translateY(-50px) rotate(0deg); }
+  100% { transform: translateY(110vh) translateX(80px) rotate(360deg); }
+}
+
+/* --- Tema Clow: círculo astral + estrellas --- */
+.astralCircle {
+  position: absolute;
+  bottom: -15%;
+  right: -10%;
+  width: 500px;
+  height: 500px;
+  border: 1px solid rgba(180, 140, 255, 0.35);
+  border-radius: 50%;
+  box-shadow:
+    inset 0 0 60px rgba(107, 79, 214, 0.25),
+    0 0 40px rgba(107, 79, 214, 0.2);
+  animation: rotateSlow 60s linear infinite;
+}
+
+.astralCircle::before,
+.astralCircle::after {
+  content: "";
+  position: absolute;
+  inset: 40px;
+  border: 1px solid rgba(180, 140, 255, 0.25);
+  border-radius: 50%;
+}
+
+.astralCircle::after {
+  inset: 80px;
+  border-style: dashed;
+}
+
+@keyframes rotateSlow {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+.star {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: #d8c9ff;
+  border-radius: 50%;
+  box-shadow: 0 0 6px 2px rgba(216, 201, 255, 0.8);
+  animation: twinkle ease-in-out infinite;
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: 0.2; transform: scale(0.6); }
+  50%      { opacity: 1; transform: scale(1.2); }
+}

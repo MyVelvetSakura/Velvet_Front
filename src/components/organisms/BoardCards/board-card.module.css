@@ -1,0 +1,203 @@
+.container_board {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: auto;
+  padding-bottom: 20px;
+}
+
+.deck_desktop {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  order: 1;
+}
+
+.board {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+  order: 2;
+}
+
+.slot {
+  width: 128px;
+  height: 271px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.slot img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.field_btn {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  position: relative;
+  margin-top: 10px;
+  z-index: 10;
+  width: 100%;
+  order: 3;
+}
+
+.cards_container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  width: 128px;
+  height: 271px;
+  cursor: pointer;
+  text-align: center;
+  perspective: 1000px;
+}
+
+.card_inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.card.flipped .card_inner {
+  transform: rotateY(180deg);
+}
+
+.card_face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card_face img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card_back {
+  transform: rotateY(0deg);
+}
+
+.card_front {
+  transform: rotateY(180deg);
+}
+
+.reading {
+  font-weight: bold;
+}
+
+.subm_btn {
+  width: 160px;
+  height: 50px;
+  border-radius: 20px;
+  background: var(--color-btn-bg);
+  color: var(--color-btn-text);
+  border: 1px solid var(--color-btn-border);
+  font-size: 16px;
+  font-weight: bold;
+  transition: transform 0.25s ease;
+  cursor: pointer;
+}
+
+.subm_btn:hover {
+  background: linear-gradient(to right, #e7f5f0, #f3c0c0);
+  transform: scale(1.08);
+  color: var(--color-btn-text-hover);
+}
+
+.subm_btn:active {
+  background: radial-gradient(circle, #ffd6e7, #e6f7ff);
+  transform: scale(0.97);
+}
+
+.reset_btn {
+  width: 160px;
+  height: 50px;
+  border-radius: 20px;
+  background: transparent;
+  color: var(--color-btn-text);
+  border: 1px dashed var(--color-btn-border);
+  font-size: 16px;
+  font-weight: bold;
+  transition: transform 0.25s ease;
+  cursor: pointer;
+}
+
+.reset_btn:hover {
+  transform: scale(1.08);
+}
+
+.reset_btn:active {
+  border-color: black;
+}
+
+.field_btn {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  position: relative;
+  margin-top: 20px;
+  z-index: 10;
+  width: 100%;
+  order: 3;
+}
+
+@media (min-width: 1200px) {
+  .field_btn {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    position: absolute;
+    bottom: 8vh;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    margin-top: 0;
+    width: auto;
+  }
+
+  .board {
+    order: 1;
+    gap: 30px;
+    margin-top: 80px;
+    margin-bottom: 100px;
+  }
+
+  .slot {
+    width: 150px;
+    height: 350px;
+  }
+
+  .card {
+    width: 130px;
+    height: 300px;
+  }
+
+  .deck_wrapper {
+    order: 2;
+    margin-bottom: 40px;
+  }
+
+  .subm_btn,
+  .reset_btn {
+    width: 173px;
+    height: 54px;
+  }
+}
