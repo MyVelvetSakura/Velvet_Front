@@ -7,10 +7,7 @@ const apiAccount = () => {
   };
 
   const login = async (name, password) => {
-    const response = await httpClient.post("/accounts/login", {
-      name,
-      password,
-    });
+    const response = await httpClient.post("/accounts/login", { name, password });
     return response.data;
   };
 
@@ -24,7 +21,22 @@ const apiAccount = () => {
     return response.data;
   };
 
-  return { addAccount, login, editAccount, getByName };
+  const verifyAccount = async (token) => {
+    const response = await httpClient.get("/accounts/verify", { params: { token } });
+    return response.data;
+  };
+
+  const forgotPassword = async (email) => {
+    const response = await httpClient.post("/accounts/forgot-password", { email });
+    return response.data;
+  };
+
+  const resetPassword = async (token, newPassword) => {
+    const response = await httpClient.post("/accounts/reset-password", { token, newPassword });
+    return response.data;
+  };
+
+  return { addAccount, login, editAccount, getByName, verifyAccount, forgotPassword, resetPassword };
 };
 
 export default apiAccount;

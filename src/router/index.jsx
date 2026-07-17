@@ -8,11 +8,27 @@ import TarotResult from "../pages/TarotResults/TarotResult";
 import History from "../pages/history/History";
 import ProfileReading from "../pages/ProfileReading/ProfileReading";
 import Loading from "../pages/Loading/Loading";
+import VerifyAccount from "../pages/VerifyAccount/VerifyAccount";
+import ForgotPassword from "../pages/ForgotPassword/ForgotPassword";
+import ResetPassword from "../pages/ResetPassword/ResetPassword";
+
 
 export const router = createBrowserRouter([
     {
         path: "/",
         Component: Loading
+    },
+    {
+        path: "/verify-account",
+        Component: VerifyAccount
+    },
+    {
+        path: "/forgot-password",
+        Component: ForgotPassword
+    },
+    {
+        path: "/reset-password",
+        Component: ResetPassword
     },
     {
         path: "/",
