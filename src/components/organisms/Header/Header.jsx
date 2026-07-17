@@ -5,9 +5,11 @@ import styles from "./header.module.css";
 import { useNavigate } from "react-router";
 import useAuth from "../../../hooks/useAuth";
 import UserMenu from "../../molecules/UserMenu/UserMenu";
+import useTheme from "../../../hooks/useTheme";
 
 const Header = () => {
   const { user, logout } = useAuth();
+  const { setTheme } = useTheme();
   const navigate = useNavigate();
 
   const handleTitleClick = () => {
@@ -19,9 +21,10 @@ const Header = () => {
   };
 
   const handleLogout = () => {
-    logout();
-    navigate("/home");
-  };
+        logout();
+        setTheme("sakura");
+        navigate("/home");
+    };
 
   return (
     <header className={styles.header}>

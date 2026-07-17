@@ -25,20 +25,25 @@ const ThemeDecoration = () => {
   }
 
   return (
-    <div className={styles.sakuraLayer}>
-      {Array.from({ length: 20 }).map((_, i) => (
+  <div className={styles.sakuraLayer}>
+    {Array.from({ length: 35 }).map((_, i) => {
+      const size = 20 + Math.random() * 20;
+      return (
         <span
           key={i}
           className={styles.petal}
           style={{
             left: `${Math.random() * 100}%`,
-            animationDelay: `${Math.random() * 5}s`,
-            animationDuration: `${6 + Math.random() * 6}s`,
+            width: `${size}px`,
+            height: `${size}px`,
+            animationDelay: `${Math.random() * 6}s`,
+            animationDuration: `${5 + Math.random() * 5}s`,
           }}
         />
-      ))}
-    </div>
-  );
+      );
+    })}
+  </div>
+);
 };
 
 export default ThemeDecoration;

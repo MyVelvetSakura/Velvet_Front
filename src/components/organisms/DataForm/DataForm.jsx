@@ -10,13 +10,9 @@ const location = useLocation();
         <>
         <div className={styles.data_card}>
             <img src={Avatar} alt={name} title={name} className={styles.avatar}/>
-            <h3 className={styles.title_data}>¡Bienvenida {name} a Velvet Sakura!</h3>
-            <p>Estos son tus datos. Guardalos para poder acceder a tu cuenta:</p>
-            <ul>
-                <li><strong>Usuario: </strong> {name}</li>
-                <li><strong>Email: </strong> {email}</li>
-                <li><strong>Contraseña: </strong> {password}</li>
-            </ul>
+            <h3 className={styles.title_data}>¡Bienvenid@ {name} a Velvet Sakura!</h3>
+            <p>En breves momentos recibirás un correo con los datos de cuenta y un enlace para 
+                validar tu cuenta.</p>
         </div>
         <div className={styles.field_btnResults}>
         <Button BtnClass="subm_btn" text="Inicio" path="/"/>

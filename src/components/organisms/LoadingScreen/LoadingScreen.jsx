@@ -36,7 +36,7 @@ export default function LoadingScreen({ progress }) {
         <img src={sakurachibi} className="sakurachibi" alt="" />
         <img src={logo} className="logo" alt="" />
       </div>
-        <img src={wand} className="wand" alt="" />
+      <img src={wand} className="wand" alt="" />
       <img src={card} className="card" alt="" />
 
       <h2 className="title">Capturando cartas...</h2>
@@ -52,17 +52,22 @@ export default function LoadingScreen({ progress }) {
 
       <p className="caption">La magia nos acompaña</p>
 
-      {Array.from({ length: 30 }).map((_, index) => (
-        <span
-          key={index}
-          className="petal"
-          style={{
-            left: `${Math.random() * 100}%`,
-            animationDelay: `${Math.random() * 5}s`,
-            animationDuration: `${6 + Math.random() * 6}s`,
-          }}
-        />
-      ))}
+      {Array.from({ length: 35 }).map((_, index) => {
+  const size = 20 + Math.random() * 20;
+  return (
+    <span
+      key={index}
+      className="petal"
+      style={{
+        left: `${Math.random() * 100}%`,
+        width: `${size}px`,
+        height: `${size}px`,
+        animationDelay: `${Math.random() * 1.5}s`,
+        animationDuration: `${3.5 + Math.random() * 2}s`,
+      }}
+    />
+  );
+})}
     </div>
   );
 }

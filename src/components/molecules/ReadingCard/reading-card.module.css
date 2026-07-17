@@ -38,31 +38,40 @@
   width: 90px;
   height: 90px;
   border-radius: 50%;
+  object-fit: cover; /* ← esta línea es la clave */
   transition: transform 0.35s ease, filter 0.35s ease;
   filter: drop-shadow(0 0 0 transparent);
+  transform-style: preserve-3d;
+  backface-visibility: visible;
 }
 
 .img_card:hover {
-  transform: scale(1.12) rotate(8deg);
-  filter: drop-shadow(0 0 12px var(--color-accent-glow))
-          drop-shadow(0 0 24px var(--color-accent-glow));
+  transform: scale(1.12);
+  filter: drop-shadow(0 0 14px var(--color-icon-glow))
+          drop-shadow(0 0 28px var(--color-icon-glow));
+  animation: spin3D 1.4s linear infinite;
 }
 
+@keyframes spin3D {
+  from { transform: rotateY(0deg) scale(1.12); }
+  to   { transform: rotateY(360deg) scale(1.12); }
+}
 .img_card:active {
   animation: cardPulse 0.4s ease;
 }
 
 @keyframes cardPulse {
-  0%   { transform: scale(1.12) rotate(8deg); }
-  40%  { transform: scale(0.92) rotate(-4deg); }
-  70%  { transform: scale(1.05) rotate(3deg); }
-  100% { transform: scale(1) rotate(0deg); }
+  0%   { transform: rotateY(0deg) scale(1.12); }
+  40%  { transform: scale(0.92); }
+  70%  { transform: scale(1.05); }
+  100% { transform: scale(1); }
 }
 
 .iconWrapper {
   position: relative;
   display: inline-flex;
   cursor: pointer;
+  perspective: 400px; /* necesario para que el giro 3D se note */
 }
 
 .iconWrapper::after {
@@ -70,8 +79,8 @@
   position: absolute;
   inset: -6px;
   border-radius: 50%;
-  border: 1px solid var(--color-accent-glow);
-  opacity: 0.5;
+  border: 2px solid var(--color-icon-glow);
+  opacity: 0.6;
   animation: haloSpin 6s linear infinite;
   pointer-events: none;
 }
@@ -83,5 +92,6 @@
 
 .iconWrapper:hover::after {
   opacity: 1;
-  border-width: 2px;
+  border-width: 3px;
+  box-shadow: 0 0 12px var(--color-icon-glow);
 }
