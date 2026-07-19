@@ -64,6 +64,7 @@ const SavedReading = () => {
       toast.error("Error al eliminar la lectura");
     }
   };
+
   return (
     <>
       <div className={styles.desktop}>
@@ -90,27 +91,6 @@ const SavedReading = () => {
             value="Eliminar"
             onClick={() => setIsDeleteConfirmOpen(true)}
           />
-          {isDeleteConfirmOpen && (
-            <Modal
-              title="¿Eliminar esta lectura?"
-              onClose={() => setIsDeleteConfirmOpen(false)}
-              actions={
-                <>
-                  <button className={styles.subm_btn} onClick={handleDelete}>
-                    Confirmar
-                  </button>
-                  <button
-                    className={styles.reset_btn}
-                    onClick={() => setIsDeleteConfirmOpen(false)}
-                  >
-                    Cancelar
-                  </button>
-                </>
-              }
-            >
-              <p>Esta acción no se puede deshacer.</p>
-            </Modal>
-          )}
           <Button text="Atrás" BtnClass={styles.reset_btn} path="/history" />
         </div>
       </div>
@@ -152,10 +132,29 @@ const SavedReading = () => {
             className={styles.subm_btn}
             type="button"
             value="Eliminar"
-            onClick={handleDelete}
+            onClick={() => setIsDeleteConfirmOpen(true)}
           />
           <Button text="Atrás" BtnClass={styles.reset_btn} path="/history" />
         </div>
+      )}
+
+      {isDeleteConfirmOpen && (
+        <Modal
+          title="¿Eliminar esta lectura?"
+          onClose={() => setIsDeleteConfirmOpen(false)}
+          actions={
+            <>
+              <button className={styles.subm_btn} onClick={handleDelete}>
+                Confirmar
+              </button>
+              <button className={styles.reset_btn} onClick={() => setIsDeleteConfirmOpen(false)}>
+                Cancelar
+              </button>
+            </>
+          }
+        >
+          <p>Esta acción no se puede deshacer.</p>
+        </Modal>
       )}
     </>
   );

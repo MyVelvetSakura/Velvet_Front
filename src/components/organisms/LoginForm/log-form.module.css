@@ -17,12 +17,58 @@
     margin-bottom: 10px;
 }
 
-.fieldbtn_form{
-    width: 80%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap:40px;
+.fieldbtn_form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  margin-top: 1.5rem;
+}
+
+.mainRow {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.linksRow {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.forgotLink {
+  font-family: var(--font-primary);
+  font-size: 0.85rem;
+  color: var(--color-text);
+  text-decoration: underline;
+  opacity: 0.75;
+  transition: opacity 0.2s ease;
+}
+
+.forgotLink:hover {
+  opacity: 1;
+}
+
+.link {
+  font-family: var(--font-primary);
+  font-size: 0.9rem;
+  color: var(--color-text);
+  text-decoration: underline;
+  opacity: 0.85;
+  transition: opacity 0.2s ease;
+}
+
+.link:hover {
+  opacity: 1;
+}
+
+.separator {
+  color: var(--color-text);
+  opacity: 0.4;
+  font-size: 0.9rem;
 }
 
 .input_login{

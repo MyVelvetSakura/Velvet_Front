@@ -1,21 +1,24 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useSearchParams, useNavigate } from "react-router";
 import apiAccount from "../../services/apiAccount";
 import useToast from "../../hooks/useToast";
+import styles from "./verify-account.module.css";
 
 const VerifyAccount = () => {
   const [searchParams] = useSearchParams();
   const navigate = useNavigate();
   const { toast } = useToast();
-  const [status, setStatus] = useState("verificando");
+  const [status, setStatus] = useState("pendiente"); // pendiente | verificando | ok | error
 
-  useEffect(() => {
-    const token = searchParams.get("token");
+  const token = searchParams.get("token");
+
+  const handleVerify = () => {
     if (!token) {
       setStatus("error");
       return;
     }
 
+    setStatus("verificando");
     const db = apiAccount();
     db.verifyAccount(token)
       .then(() => {
@@ -27,13 +30,34 @@ const VerifyAccount = () => {
         setStatus("error");
         toast.error(error.response?.data || "No se pudo verificar la cuenta");
       });
-  }, [searchParams, navigate, toast]);
+  };
 
   return (
-    <div style={{ textAlign: "center", padding: "3rem" }}>
-      {status === "verificando" && <h3>Verificando tu cuenta...</h3>}
-      {status === "ok" && <h3>¡Cuenta verificada! Redirigiendo...</h3>}
-      {status === "error" && <h3>El enlace no es válido o ha caducado.</h3>}
+    <div className={styles.container}>
+      {status === "pendiente" && (
+        <>
+          <p className={styles.message}>Pulsa el botón para activar tu cuenta.</p>
+          <button className={styles.subm_btn} onClick={handleVerify}>
+            Verificar mi cuenta
+          </button>
+        </>
+      )}
+      {status === "verificando" && (
+        <>
+          <div className={styles.spinner} />
+          <p className={styles.message}>Verificando tu cuenta...</p>
+        </>
+      )}
+      {status === "ok" && <p className={styles.message}>¡Cuenta verificada! Redirigiendo...</p>}
+      {status === "error" && (
+        <>
+          <p className={styles.message}>El enlace no es válido o ha caducado.</p>
+          <p className={styles.hint}>
+            Si ya intentaste verificar antes, es posible que tu cuenta ya esté activa —
+            prueba a iniciar sesión directamente.
+          </p>
+        </>
+      )}
     </div>
   );
 };

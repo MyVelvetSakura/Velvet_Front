@@ -1,4 +1,3 @@
-// services/httpClient.js
 import axios from "axios";
 
 const httpClient = axios.create({
@@ -12,5 +11,20 @@ httpClient.interceptors.request.use((config) => {
   }
   return config;
 });
+
+httpClient.interceptors.response.use(
+  (response) => response,
+  (error) => {
+    if (error.response?.status === 401 || error.response?.status === 403) {
+      const hadToken = !!localStorage.getItem("token");
+      localStorage.removeItem("user");
+      localStorage.removeItem("token");
+      if (hadToken && window.location.pathname !== "/home") {
+        window.location.href = "/home";
+      }
+    }
+    return Promise.reject(error);
+  }
+);
 
 export default httpClient;

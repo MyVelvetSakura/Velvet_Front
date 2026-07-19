@@ -1,0 +1,32 @@
+.container {
+  max-width: 440px;
+  margin: 5rem auto;
+  text-align: center;
+  padding: 2.5rem 2rem;
+  background: var(--color-cream-white);
+  color: var(--color-text);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 8px 24px var(--color-shadow-soft);
+}
+
+.message {
+  font-family: var(--font-primary);
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.confirmBtn {
+  padding: 0.8rem 1.6rem;
+  border-radius: 20px;
+  background: transparent;
+  border: 1px solid #b23b5e;
+  color: #b23b5e;
+  font-weight: bold;
+  cursor: pointer;
+  transition: var(--transition-soft);
+}
+
+.confirmBtn:hover {
+  background: rgba(178, 59, 94, 0.1);
+}

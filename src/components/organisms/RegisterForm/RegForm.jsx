@@ -4,9 +4,13 @@ import apiAccount from "../../../services/apiAccount";
 import { useState } from "react";
 import { useNavigate } from "react-router";
 import useToast from "../../../hooks/useToast";
+import Modal from "../../molecules/Modal/Modal";
+import AvatarGallery from "../../molecules/AvatarGallery/AvatarGallery";
+import { AVATARS } from "../../../constants/avatars";
 
-function RegForm() {
-  const [form, setForm] = useState({ name: "", email: "", password: "" });
+function RegForm(){
+  const [form, setForm] = useState({name: "", email: "", password: "", avatarKey: "default"});
+  const [isAvatarModalOpen, setIsAvatarModalOpen] = useState(false);
   const { toast } = useToast();
   const dbAccount = apiAccount();
   const navigate = useNavigate();
@@ -74,7 +78,7 @@ function RegForm() {
 
   return (
     <>
-      <form className={styles.reg_form} onSubmit={handleSubmit}>
+     <form className={styles.reg_form} onSubmit={handleSubmit}>
         <div className={styles.field_form}>
           <label htmlFor="name" className={styles.label_login}>
             Introduce un alias:
@@ -138,10 +142,42 @@ function RegForm() {
           </span>
         </div>
 
+                <div className={styles.field_form}>
+          <label className={styles.label_login}>Tu avatar:</label>
+          <button
+            type="button"
+            className={styles.avatarPreviewBtn}
+            onClick={() => setIsAvatarModalOpen(true)}
+          >
+            <img src={AVATARS[form.avatarKey]} alt="Avatar seleccionado" className={styles.avatarPreviewImg} />
+            <span className={styles.changeText}>Cambiar</span>
+          </button>
+        </div>
+
         <div className={styles.fieldbtn_form}>
           <Button BtnClass="subm_btn" text="Confirmar" path="" />
         </div>
+
       </form>
+      {isAvatarModalOpen && (
+      <Modal
+        title="Elige tu avatar"
+        onClose={() => setIsAvatarModalOpen(false)}
+        actions={
+          <button className={styles.subm_btn} onClick={() => setIsAvatarModalOpen(false)}>
+            Listo
+          </button>
+        }
+      >
+        <AvatarGallery
+          selected={form.avatarKey}
+          onSelect={(key) => {
+            setForm({ ...form, avatarKey: key });
+            setIsAvatarModalOpen(false);
+          }}
+        />
+      </Modal>
+    )}
     </>
   );
 }

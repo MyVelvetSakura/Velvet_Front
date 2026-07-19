@@ -1,11 +1,11 @@
 import { useState, useEffect } from "react";
 import Logo from "../../../assets/images/Logo.png";
-import ProfileImg from "../../../assets/images/profile_image.png";
 import styles from "./header.module.css";
 import { useNavigate } from "react-router";
 import useAuth from "../../../hooks/useAuth";
 import UserMenu from "../../molecules/UserMenu/UserMenu";
 import useTheme from "../../../hooks/useTheme";
+import { getAvatarSrc } from "../../../constants/avatars";
 
 const Header = () => {
   const { user, logout } = useAuth();
@@ -21,10 +21,10 @@ const Header = () => {
   };
 
   const handleLogout = () => {
-        logout();
-        setTheme("sakura");
-        navigate("/home");
-    };
+    logout();
+    setTheme("sakura");
+    navigate("/home");
+  };
 
   return (
     <header className={styles.header}>
@@ -52,7 +52,7 @@ const Header = () => {
         <div className={styles.field_profile}>
           <UserMenu
             user={user}
-            avatarSrc={user.avatar || ProfileImg}
+            avatarSrc={getAvatarSrc(user.avatarKey)}
             onLogout={handleLogout}
           />
         </div>

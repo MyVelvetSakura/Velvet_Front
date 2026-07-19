@@ -33,8 +33,8 @@ body {
   --radius-lg: 24px;
   --transition-soft: all 0.3s ease;
   --color-btn-bg: linear-gradient(90deg, #ffe08c, #ffb4d5);
-  --color-btn-text: #2b2540;
-  --color-btn-border: rgba(0, 0, 0, 0.15);
+  --color-btn-text: #6a6771;
+  --color-btn-border: rgba(175, 172, 172, 0.15);
   --color-btn-text-hover: #2b2540;
   --color-btn-bg-hover: linear-gradient(to right, #e7f5f0, #f3c0c0);
   --color-btn-bg-active: radial-gradient(circle, #ffd6e7, #e6f7ff);

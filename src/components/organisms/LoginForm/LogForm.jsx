@@ -38,8 +38,11 @@ function LogForm() {
       login(loggedUser, token);
       navigate("/readings");
     } catch (error) {
-      toast.error(error.response?.data || "Error al conectar con el servidor");
-    }
+    const message = typeof error.response?.data === "string"
+        ? error.response.data
+        : error.response?.data?.error || "Error al conectar con el servidor";
+    toast.error(message);
+}
   };
 
   return (
@@ -76,11 +79,13 @@ function LogForm() {
         </div>
 
         <div className={styles.fieldbtn_form}>
-          <Button BtnClass="subm_btn" text="Confirmar" path="" />
-          <Link to="/register" className={styles.register}>
-            Regístrate
-          </Link>
-          <Link to="/forgot-password" className={styles.register}>
+          <div className={styles.mainRow}>
+            <Button BtnClass="subm_btn" text="Confirmar" path="" />
+            <Link to="/register" className={styles.register}>
+              Regístrate
+            </Link>
+          </div>
+          <Link to="/forgot-password" className={styles.forgotLink}>
             ¿Olvidaste tu contraseña?
           </Link>
         </div>

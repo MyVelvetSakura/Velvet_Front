@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router";
 import apiAccount from "../../services/apiAccount";
 import useToast from "../../hooks/useToast";
 import styles from "./forgot-password.module.css";
@@ -26,21 +27,30 @@ const ForgotPassword = () => {
 
   return (
     <div className={styles.container}>
-      <h3>Recuperar contraseña</h3>
+      <h3 className={styles.title}>Recuperar contraseña</h3>
       {sent ? (
-        <p>Revisa tu correo para continuar con la recuperación.</p>
+        <p className={styles.confirmationText}>
+          Revisa tu correo para continuar con la recuperación.
+        </p>
       ) : (
-        <form onSubmit={handleSubmit} className={styles.form}>
-          <label htmlFor="email">Introduce tu email registrado:</label>
-          <input
-            type="email"
-            id="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-          />
-          <button type="submit" className={styles.subm_btn}>Enviar enlace</button>
-        </form>
+        <>
+          <p className={styles.subtitle}>
+            Introduce el email con el que te registraste y te enviaremos un enlace para crear una nueva contraseña.
+          </p>
+          <form onSubmit={handleSubmit} className={styles.form}>
+            <label htmlFor="email" className={styles.label}>Email:</label>
+            <input
+              type="email"
+              id="email"
+              className={styles.input}
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+            <button type="submit" className={styles.subm_btn}>Enviar enlace</button>
+          </form>
+        </>
       )}
+      <Link to="/home" className={styles.backLink}>Volver al inicio</Link>
     </div>
   );
 };

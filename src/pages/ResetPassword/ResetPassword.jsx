@@ -41,19 +41,21 @@ const ResetPassword = () => {
 
   return (
     <div className={styles.container}>
-      <h3>Crear nueva contraseña</h3>
+      <h3 className={styles.title}>Crear nueva contraseña</h3>
       <form onSubmit={handleSubmit} className={styles.form}>
-        <label htmlFor="password">Nueva contraseña:</label>
+        <label htmlFor="password" className={styles.label}>Nueva contraseña:</label>
         <input
           type="password"
           id="password"
+          className={styles.input}
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
-        <label htmlFor="confirmPassword">Confirma la contraseña:</label>
+        <label htmlFor="confirmPassword" className={styles.label}>Confirma la contraseña:</label>
         <input
           type="password"
           id="confirmPassword"
+          className={styles.input}
           value={confirmPassword}
           onChange={(e) => setConfirmPassword(e.target.value)}
         />

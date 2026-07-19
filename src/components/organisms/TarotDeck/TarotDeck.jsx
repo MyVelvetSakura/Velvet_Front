@@ -1,15 +1,15 @@
 import { useLocation, useNavigate } from "react-router";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import styles from "./tarot-deck.module.css";
 import Button from "../../atoms/Button/Button";
 import ArrowLeft from "../../../assets/images/flecha_izquierda.png";
 import ArrowRight from "../../../assets/images/flecha_derecha.png";
 import apiReading from "../../../services/apiReading";
-import { useEffect } from "react";
 import { format } from "date-fns";
 import { es } from "date-fns/locale";
 import Modal from "../../molecules/Modal/Modal";
 import useToast from "../../../hooks/useToast";
+import apiInterpretation from "../../../services/apiInterpretation";
 
 const TarotDeck = ({ user }) => {
   const { state } = useLocation();
@@ -24,15 +24,20 @@ const TarotDeck = ({ user }) => {
     locale: es,
   });
   const { toast } = useToast();
+  const { past, present, future, deckType, question } = state || {};
+  const [interpretation, setInterpretation] = useState("");
+  const [loadingInterpretation, setLoadingInterpretation] = useState(false);
 
   useEffect(() => {
-    const checkMobile = () => setIsMobile(window.innerWidth <= 768);
-    checkMobile();
-    window.addEventListener("resize", checkMobile);
-    return () => window.removeEventListener("resize", checkMobile);
-  }, []);
+    if (!question || !past || !present || !future) return;
 
-  const { past, present, future, deckType } = state || {};
+    setLoadingInterpretation(true);
+    const db = apiInterpretation();
+    db.generate(question, past.id, present.id, future.id)
+      .then((res) => setInterpretation(res.interpretation))
+      .catch(() => setInterpretation("No se pudo generar la interpretación en este momento."))
+      .finally(() => setLoadingInterpretation(false));
+  }, []);
 
   const cards = [
     { ...past, stage: "Pasado" },
@@ -56,10 +61,10 @@ const TarotDeck = ({ user }) => {
   };
 
   const handleSave = async () => {
-  if (!readingName.trim()) {
-    toast.error("Debes introducir un nombre para la partida");
-    return;
-  }
+    if (!readingName.trim()) {
+      toast.error("Debes introducir un nombre para la partida");
+      return;
+    }
 
     const dataReading = {
       userId: user?.id,
@@ -69,19 +74,21 @@ const TarotDeck = ({ user }) => {
       presentCardId: present.id,
       futureCardId: future.id,
       deckType,
+      question,
+      interpretation,
     };
 
     try {
-    await dbReadings.createReading(dataReading);
-    setIsModalOpen(false);
-    setReadingName("");
-    toast.success("Lectura guardada correctamente");
-    navigate("/history");
-  } catch (error) {
-    console.error(error);
-    toast.error("Error al guardar la lectura");
-  }
-};
+      await dbReadings.createReading(dataReading);
+      setIsModalOpen(false);
+      setReadingName("");
+      toast.success("Lectura guardada correctamente");
+      navigate("/history");
+    } catch (error) {
+      console.error(error);
+      toast.error("Error al guardar la lectura");
+    }
+  };
 
   return (
     <>
@@ -168,6 +175,17 @@ const TarotDeck = ({ user }) => {
         )}
       </div>
 
+      {question && (
+        <div className={styles.interpretationBox}>
+          <h3 className={styles.interpretationTitle}>La respuesta de las cartas</h3>
+          {loadingInterpretation ? (
+            <p className={styles.interpretationText}>Consultando el destino...</p>
+          ) : (
+            <p className={styles.interpretationText}>{interpretation}</p>
+          )}
+        </div>
+      )}
+
       {showActions && (
         <div className={styles.actions}>
           <input
@@ -182,24 +200,24 @@ const TarotDeck = ({ user }) => {
       )}
 
       {isModalOpen && (
-  <Modal
-    title="Guardar lectura"
-    onClose={() => setIsModalOpen(false)}
-    actions={
-      <>
-        <button onClick={handleSave} className={styles.subm_btn}>Confirmar</button>
-        <button onClick={() => setIsModalOpen(false)} className={styles.reset_btn}>Cancelar</button>
-      </>
-    }
-  >
-    <input
-      type="text"
-      placeholder="Nombre de la partida"
-      value={readingName}
-      onChange={(e) => setReadingName(e.target.value)}
-    />
-  </Modal>
-)}
+        <Modal
+          title="Guardar lectura"
+          onClose={() => setIsModalOpen(false)}
+          actions={
+            <>
+              <button onClick={handleSave} className={styles.subm_btn}>Confirmar</button>
+              <button onClick={() => setIsModalOpen(false)} className={styles.reset_btn}>Cancelar</button>
+            </>
+          }
+        >
+          <input
+            type="text"
+            placeholder="Nombre de la partida"
+            value={readingName}
+            onChange={(e) => setReadingName(e.target.value)}
+          />
+        </Modal>
+      )}
     </>
   );
 };

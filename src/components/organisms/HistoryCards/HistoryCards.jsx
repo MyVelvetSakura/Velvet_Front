@@ -54,7 +54,7 @@ return(
     </section>
     ):(
          <section className= {styles.no_cards}>
-            <img className={styles.img_no_cards} src="/src/assets/images/Momo.jpg" alt="Relax"/>
+            <img className={styles.img_no_cards} src="/src/assets/images/notfound.png" alt="No hay lecturas disponibles"/>
             <p> No hay lecturas guardadas. Revela ahora tu destino.</p>
             <Button BtnClass="subm_btn" path="/readings" text= "Inicio" />
          </section>

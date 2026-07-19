@@ -19,8 +19,8 @@ const DeckSelect = ({ onSelect }) => {
 
   const handleSelect = (deck) => {
     setTheme(deck === "CLOW" ? "clow" : "sakura");
-    onSelect(deck);
-  };
+    navigate("/readings/question", { state: { deckType: deck } });
+};
 
   return (
     <div className={styles.container}>

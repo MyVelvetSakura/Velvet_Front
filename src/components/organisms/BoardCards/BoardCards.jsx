@@ -4,7 +4,7 @@ import Deck from "../../molecules/Deck/Deck";
 import { apiSakura } from "../../../services/api";
 import { useNavigate } from "react-router";
 
-const BoardCards = ({ deckType }) => {
+const BoardCards = ({ deckType, question }) => {
   const [deck, setDeck] = useState([]);
   const [masterDeck, setMasterDeck] = useState([]);
   const navigate = useNavigate();
@@ -52,19 +52,21 @@ const BoardCards = ({ deckType }) => {
   };
 
   const handleButtonClick = () => {
-    if (!revealed) {
-      setRevealed(true);
-    } else {
-      navigate("/tarot-result", {
-        state: {
-          past: slots.past,
-          present: slots.present,
-          future: slots.future,
-          deckType,
+        if (!revealed) {
+            setRevealed(true);
+        } else {
+            navigate("/tarot-result", {
+                state: {
+                    past: slots.past,
+                    present: slots.present,
+                    future: slots.future,
+                    deckType,
+                    question,
+                }
+            });
         }
-      });
-    }
-  };
+    };
+
 
   const shuffleDeck = (newDeck) => {
     const deckToShuffle = newDeck ? [...newDeck] : [...deck];

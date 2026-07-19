@@ -7,7 +7,10 @@ const apiAccount = () => {
   };
 
   const login = async (name, password) => {
-    const response = await httpClient.post("/accounts/login", { name, password });
+    const response = await httpClient.post("/accounts/login", {
+      name,
+      password,
+    });
     return response.data;
   };
 
@@ -22,21 +25,60 @@ const apiAccount = () => {
   };
 
   const verifyAccount = async (token) => {
-    const response = await httpClient.get("/accounts/verify", { params: { token } });
+    const response = await httpClient.get("/accounts/verify", {
+      params: { token },
+    });
     return response.data;
   };
 
   const forgotPassword = async (email) => {
-    const response = await httpClient.post("/accounts/forgot-password", { email });
+    const response = await httpClient.post("/accounts/forgot-password", {
+      email,
+    });
     return response.data;
   };
 
   const resetPassword = async (token, newPassword) => {
-    const response = await httpClient.post("/accounts/reset-password", { token, newPassword });
+    const response = await httpClient.post("/accounts/reset-password", {
+      token,
+      newPassword,
+    });
     return response.data;
   };
 
-  return { addAccount, login, editAccount, getByName, verifyAccount, forgotPassword, resetPassword };
+  const updateAvatar = async (id, avatarKey) => {
+    const response = await httpClient.patch(`/accounts/${id}/avatar`, {
+      avatarKey,
+    });
+    return response.data;
+  };
+
+  const requestAccountDeletion = async (id, password) => {
+    const response = await httpClient.post(`/accounts/${id}/request-deletion`, {
+      password,
+    });
+    return response.data;
+  };
+
+  const confirmAccountDeletion = async (token) => {
+    const response = await httpClient.get("/accounts/confirm-deletion", {
+      params: { token },
+    });
+    return response.data;
+  };
+
+  return {
+    addAccount,
+    login,
+    editAccount,
+    getByName,
+    verifyAccount,
+    forgotPassword,
+    resetPassword,
+    updateAvatar,
+    requestAccountDeletion,
+    confirmAccountDeletion,
+  };
 };
 
 export default apiAccount;

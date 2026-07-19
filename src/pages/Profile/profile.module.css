@@ -1,0 +1,151 @@
+.container {
+  max-width: 480px;
+  margin: 3rem auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.title {
+  font-family: var(--font-primary);
+  font-size: 1.5rem;
+  color: var(--color-text);
+  margin-bottom: 2rem;
+}
+
+.avatarSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 2.5rem;
+}
+
+.currentAvatar {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 14px var(--color-shadow-soft);
+}
+
+.changeAvatarBtn {
+  background: transparent;
+  border: 1px solid var(--color-border-soft);
+  color: var(--color-text);
+  border-radius: var(--radius-lg);
+  padding: 0.5rem 1.2rem;
+  font-family: var(--font-primary);
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: var(--transition-soft);
+}
+
+.changeAvatarBtn:hover {
+  border-color: var(--color-magic-pink);
+}
+
+.nameSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.label {
+  font-family: var(--font-primary);
+  font-size: 0.85rem;
+  color: var(--color-text);
+  opacity: 0.7;
+}
+
+.editRow {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.currentName {
+  font-family: var(--font-primary);
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: var(--color-text);
+}
+
+.editInput {
+  border: 1px solid var(--color-border-soft);
+  background-color: var(--color-cream-white);
+  color: var(--color-text);
+  border-radius: 4px;
+  text-align: center;
+  font-size: 1rem;
+  font-family: inherit;
+  width: 150px;
+  padding: 0.4rem;
+  outline: none;
+}
+
+.errorText {
+  font-size: 0.8rem;
+  color: #b23b5e;
+  width: 100%;
+}
+
+.subm_btn {
+  background: var(--color-btn-bg);
+  color: var(--color-btn-text);
+  border: 1px solid var(--color-btn-border);
+  border-radius: 20px;
+  padding: 0.7rem 1.6rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.loading {
+  text-align: center;
+  padding: 3rem;
+  color: var(--color-text);
+}
+
+.dangerZone {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--color-border-soft);
+}
+
+.deleteAccountBtn {
+  background: transparent;
+  border: 1px solid rgba(178, 59, 94, 0.4);
+  color: #b23b5e;
+  border-radius: var(--radius-lg);
+  padding: 0.6rem 1.4rem;
+  font-family: var(--font-primary);
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: var(--transition-soft);
+}
+
+.deleteAccountBtn:hover {
+  background: rgba(178, 59, 94, 0.1);
+}
+
+.reset_btn {
+  background: transparent;
+  color: var(--color-btn-text);
+  border: 1px dashed var(--color-btn-border);
+  border-radius: 20px;
+  padding: 0.7rem 1.6rem;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.25s ease;
+}
+
+.reset_btn:hover {
+  transform: scale(1.03);
+}
+
+.reset_btn:active {
+  border-color: var(--color-text);
+}

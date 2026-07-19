@@ -1,0 +1,35 @@
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+.avatarOption {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  padding: 0;
+  cursor: pointer;
+  overflow: hidden;
+  background: var(--color-cream-white);
+  transition: var(--transition-soft);
+}
+
+.avatarOption:hover {
+  transform: scale(1.08);
+  border-color: var(--color-accent-glow);
+}
+
+.selected {
+  border-color: var(--color-magic-pink);
+  box-shadow: 0 0 12px var(--color-accent-glow);
+}
+
+.avatarImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

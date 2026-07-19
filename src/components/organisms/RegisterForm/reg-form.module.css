@@ -38,6 +38,24 @@
     gap:40px;
 }
 
+.subm_btn {
+  background: var(--color-btn-bg);
+  color: var(--color-btn-text);
+  border: 1px solid var(--color-btn-border);
+  border-radius: 20px;
+  padding: 0.7rem 1.6rem;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.25s ease;
+}
+
+.subm_btn:hover {
+  background: var(--color-btn-bg-hover);
+  color: var(--color-btn-text-hover);
+  transform: scale(1.03);
+}
+
 @media (min-width:1200px){
 .reg_form{
     width:600px;
@@ -47,4 +65,34 @@
 .input_login{
     width:318px;   
 }
+}
+
+.avatarPreviewBtn {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  background: transparent;
+  border: 1px solid var(--color-border-soft);
+  border-radius: var(--radius-lg);
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: var(--transition-soft);
+}
+
+.avatarPreviewBtn:hover {
+  border-color: var(--color-magic-pink);
+}
+
+.avatarPreviewImg {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.changeText {
+  font-family: var(--font-primary);
+  font-size: 0.9rem;
+  color: var(--color-text);
+  text-decoration: underline;
 }

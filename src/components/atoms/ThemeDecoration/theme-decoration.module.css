@@ -31,38 +31,77 @@
   }
 }
 
-/* --- Tema Clow: círculo astral + estrellas --- */
 .astralCircle {
   position: absolute;
-  bottom: -15%;
-  right: -10%;
-  width: 500px;
-  height: 500px;
-  border: 1px solid rgba(180, 140, 255, 0.35);
-  border-radius: 50%;
-  box-shadow:
-    inset 0 0 60px rgba(107, 79, 214, 0.25),
-    0 0 40px rgba(107, 79, 214, 0.2);
-  animation: rotateSlow 60s linear infinite;
+  bottom: -12%;
+  right: -8%;
+  width: 480px;
+  height: 480px;
+  opacity: 0.55;
+  animation: ferrisSpin 90s linear infinite;
 }
 
-.astralCircle::before,
-.astralCircle::after {
-  content: "";
-  position: absolute;
-  inset: 40px;
-  border: 1px solid rgba(180, 140, 255, 0.25);
-  border-radius: 50%;
-}
-
-.astralCircle::after {
-  inset: 80px;
-  border-style: dashed;
-}
-
-@keyframes rotateSlow {
+@keyframes ferrisSpin {
   from { transform: rotate(0deg); }
   to   { transform: rotate(360deg); }
+}
+
+.astralCircle .ringOuter,
+.astralCircle .ringMid,
+.astralCircle .ringInner {
+  fill: none;
+  stroke: rgba(180, 140, 255, 0.4);
+  stroke-width: 1;
+}
+
+.astralCircle .ringOuterDashed {
+  fill: none;
+  stroke: rgba(216, 201, 255, 0.3);
+  stroke-width: 1;
+}
+
+.astralCircle .centerStar line {
+  stroke: rgba(216, 201, 255, 0.35);
+  stroke-width: 1;
+}
+
+.astralCircle .centerDot {
+  fill: rgba(216, 201, 255, 0.7);
+  filter: drop-shadow(0 0 4px rgba(216, 201, 255, 0.9));
+}
+
+.astralCircle .sunGlyph circle {
+  fill: none;
+  stroke: rgba(255, 214, 130, 0.75);
+  stroke-width: 1.6;
+}
+
+.astralCircle .sunGlyph line {
+  stroke: rgba(255, 214, 130, 0.75);
+  stroke-width: 1.6;
+}
+
+.astralCircle .moonGlyph {
+  fill: rgba(216, 201, 255, 0.65);
+}
+
+.astralCircle .smallStar line {
+  stroke: rgba(180, 140, 255, 0.7);
+  stroke-width: 1.4;
+}
+
+.astralCircle .smallStar line {
+  stroke: rgba(180, 140, 255, 0.55);
+  stroke-width: 1.2;
+}
+
+.astralCircle .flourish path {
+  fill: rgba(180, 140, 255, 0.35);
+}
+
+.astralCircle .node {
+  fill: rgba(216, 201, 255, 0.75);
+  filter: drop-shadow(0 0 3px rgba(216, 201, 255, 0.85));
 }
 
 .star {
