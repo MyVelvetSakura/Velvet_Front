@@ -10,6 +10,8 @@ import { es } from "date-fns/locale";
 import Modal from "../../molecules/Modal/Modal";
 import useToast from "../../../hooks/useToast";
 import apiInterpretation from "../../../services/apiInterpretation";
+import InterpretationModalBackground from "../../molecules/InterpretationModalBackground/InterpretationModalBackground";
+
 
 const TarotDeck = ({ user }) => {
   const { state } = useLocation();
@@ -27,6 +29,8 @@ const TarotDeck = ({ user }) => {
   const { past, present, future, deckType, question } = state || {};
   const [interpretation, setInterpretation] = useState("");
   const [loadingInterpretation, setLoadingInterpretation] = useState(false);
+  const [isInterpretationModalOpen, setIsInterpretationModalOpen] =
+    useState(false);
 
   useEffect(() => {
     if (!question || !past || !present || !future) return;
@@ -35,7 +39,11 @@ const TarotDeck = ({ user }) => {
     const db = apiInterpretation();
     db.generate(question, past.id, present.id, future.id)
       .then((res) => setInterpretation(res.interpretation))
-      .catch(() => setInterpretation("No se pudo generar la interpretación en este momento."))
+      .catch(() =>
+        setInterpretation(
+          "No se pudo generar la interpretación en este momento.",
+        ),
+      )
       .finally(() => setLoadingInterpretation(false));
   }, []);
 
@@ -79,6 +87,7 @@ const TarotDeck = ({ user }) => {
     };
 
     try {
+      console.log("Guardando lectura con:", dataReading);
       await dbReadings.createReading(dataReading);
       setIsModalOpen(false);
       setReadingName("");
@@ -176,16 +185,33 @@ const TarotDeck = ({ user }) => {
       </div>
 
       {question && (
-        <div className={styles.interpretationBox}>
-          <h3 className={styles.interpretationTitle}>La respuesta de las cartas</h3>
-          {loadingInterpretation ? (
-            <p className={styles.interpretationText}>Consultando el destino...</p>
-          ) : (
-            <p className={styles.interpretationText}>{interpretation}</p>
-          )}
+        <div className={styles.interpretationTrigger}>
+          <button
+            className={styles.interpretationBtn}
+            onClick={() => setIsInterpretationModalOpen(true)}
+            disabled={loadingInterpretation}
+          >
+            {loadingInterpretation
+              ? "Consultando el destino..."
+              : "🔮 Ver la respuesta de las cartas"}
+          </button>
         </div>
       )}
 
+      {isInterpretationModalOpen && (
+    <Modal
+        title="La respuesta de las cartas"
+        onClose={() => setIsInterpretationModalOpen(false)}
+        background={<InterpretationModalBackground />}
+        actions={
+            <button className={styles.subm_btn} onClick={() => setIsInterpretationModalOpen(false)}>
+                Cerrar
+            </button>
+        }
+    >
+        <p className={styles.interpretationText}>{interpretation}</p>
+    </Modal>
+)}
       {showActions && (
         <div className={styles.actions}>
           <input
@@ -195,7 +221,11 @@ const TarotDeck = ({ user }) => {
             onClick={() => setIsModalOpen(true)}
           />
 
-          <Button text="Reiniciar" BtnClass={styles.reset_btn} path="/readings" />
+          <Button
+            text="Reiniciar"
+            BtnClass={styles.reset_btn}
+            path="/readings"
+          />
         </div>
       )}
 
@@ -205,8 +235,15 @@ const TarotDeck = ({ user }) => {
           onClose={() => setIsModalOpen(false)}
           actions={
             <>
-              <button onClick={handleSave} className={styles.subm_btn}>Confirmar</button>
-              <button onClick={() => setIsModalOpen(false)} className={styles.reset_btn}>Cancelar</button>
+              <button onClick={handleSave} className={styles.subm_btn}>
+                Confirmar
+              </button>
+              <button
+                onClick={() => setIsModalOpen(false)}
+                className={styles.reset_btn}
+              >
+                Cancelar
+              </button>
             </>
           }
         >

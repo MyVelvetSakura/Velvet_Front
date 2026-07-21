@@ -7,12 +7,15 @@ import circle from "../../assets/images/loading/magic-circle.png";
 import logo from "../../assets/images/loading/logo.png";
 import card from "../../assets/images/loading/card.png";
 import wand from "../../assets/images/loading/wand.png";
+import { isTokenExpired } from "../../utils/jwt";
+import useAuth from "../../hooks/useAuth";
 
 const ASSETS_TO_PRELOAD = [clouds, sakurachibi, circle, logo, card, wand];
 
 const Loading = () => {
     const [progress, setProgress] = useState(0);
     const navigate = useNavigate();
+    const { user, logout } = useAuth();
 
     useEffect(() => {
         let loaded = 0;
@@ -23,25 +26,29 @@ const Loading = () => {
             setProgress(Math.round((loaded / total) * 100));
         };
 
+
         const promises = ASSETS_TO_PRELOAD.map((src) => {
             return new Promise((resolve) => {
                 const img = new Image();
                 img.src = src;
-                img.onload = () => {
-                    updateProgress();
-                    resolve();
-                };
-                img.onerror = () => {
-                    updateProgress();
-                    resolve();
-                };
+                img.onload = () => { updateProgress(); resolve(); };
+                img.onerror = () => { updateProgress(); resolve(); };
             });
         });
 
         Promise.all(promises).then(() => {
-            setTimeout(() => navigate("/home", { replace: true }), 500);
+            const token = localStorage.getItem("token");
+
+            setTimeout(() => {
+                if (user && token && !isTokenExpired(token)) {
+                    navigate("/readings", { replace: true });
+                } else {
+                    if (user) logout();
+                    navigate("/home", { replace: true });
+                }
+            }, 500);
         });
-    }, [navigate]);
+    }, [navigate, user, logout]);
 
     return (
         <>

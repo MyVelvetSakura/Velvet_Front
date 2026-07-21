@@ -28,13 +28,12 @@ const apiReading = () => {
     return response;
   };
 
-  return {
-    getByUserId,
-    createReading,
-    editName,
-    deleteReading,
-    deleteAllByUserId,
-  };
+  const getById = async (id) => {
+    const response = await httpClient.get(`/readings/${id}`);
+    return response.data;
+};
+
+return { getByUserId, createReading, editName, deleteReading, deleteAllByUserId, getById };
 };
 
 export default apiReading;

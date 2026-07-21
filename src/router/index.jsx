@@ -17,40 +17,39 @@ import ConfirmDeleteAccount from "../pages/ConfirmDeleteAccount/ConfirmDeleteAcc
 import PrivateRoute from "./PrivateRoute";
 import AskQuestion from "../pages/AskQuestion/AskQuestion";
 
-
-
 export const router = createBrowserRouter([
-    {
-        path: "/",
-        Component: RootProviders,
+  {
+    path: "/",
+    Component: RootProviders,
+    children: [
+      { index: true, Component: Loading },
+      { path: "/verify-account", Component: VerifyAccount },
+      { path: "/forgot-password", Component: ForgotPassword },
+      { path: "/reset-password", Component: ResetPassword },
+      { path: "/confirm-delete-account", Component: ConfirmDeleteAccount },
+      {
+        Component: Layout,
         children: [
-            { index: true, Component: Loading },
-            { path: "/verify-account", Component: VerifyAccount },
-            { path: "/forgot-password", Component: ForgotPassword },
-            { path: "/reset-password", Component: ResetPassword },
-            { path: "/confirm-delete-account", Component: ConfirmDeleteAccount },
-            {
-                Component: Layout,
-                children: [
-                    // Públicas
-                    { path: "/home", Component: Home },
-                    { path: "/register", Component: Register },
-                    { path: "/info", Component: Info },
+          // Públicas
+          { path: "/home", Component: Home },
+          { path: "/register", Component: Register },
+          { path: "/info", Component: Info },
 
-                    //Privadas
-                    {
-                        Component: PrivateRoute,
-                        children: [
-                            { path: "/readings", Component: Start },
-                             { path: "/readings/question", Component: AskQuestion },
-                            { path: "/tarot-result", Component: TarotResult },
-                            { path: "/history", Component: History },
-                            { path: "/profile", Component: ProfileReading },
-                            { path: "/profile-settings", Component: Profile },
-                        ]
-                    }
-                ]
-            }
-        ]
-    }
-])
+          //Privadas
+          {
+            Component: PrivateRoute,
+            children: [
+              { path: "/readings", Component: Start },
+              { path: "/readings/question", Component: AskQuestion },
+              { path: "/readings/board", Component: Start },
+              { path: "/tarot-result", Component: TarotResult },
+              { path: "/history", Component: History },
+              { path: "/profile", Component: ProfileReading },
+              { path: "/profile-settings", Component: Profile },
+            ],
+          },
+        ],
+      },
+    ],
+  },
+]);

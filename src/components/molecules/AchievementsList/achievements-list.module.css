@@ -1,0 +1,50 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.card {
+  background: var(--color-cream-white);
+  border: 1px solid var(--color-border-soft);
+  border-radius: var(--radius-md);
+  padding: 1rem;
+  text-align: center;
+  transition: var(--transition-soft);
+}
+
+.unlocked {
+  box-shadow: 0 0 12px var(--color-accent-glow);
+}
+
+.locked {
+  opacity: 0.55;
+}
+
+.icon {
+  font-size: 1.8rem;
+  margin-bottom: 0.4rem;
+}
+
+.title {
+  font-family: var(--font-primary);
+  font-size: 0.95rem;
+  color: var(--color-text);
+  margin: 0 0 0.4rem;
+}
+
+.description {
+  font-size: 0.8rem;
+  color: var(--color-text);
+  opacity: 0.8;
+  margin: 0;
+}
+
+.reward {
+  display: inline-block;
+  margin-top: 0.6rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: var(--color-text);
+}

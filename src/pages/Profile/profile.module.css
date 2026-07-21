@@ -149,3 +149,17 @@
 .reset_btn:active {
   border-color: var(--color-text);
 }
+
+.progressSection,
+.achievementsSection {
+  margin-top: 2.5rem;
+  text-align: left;
+}
+
+.readingsCount {
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--color-text);
+  opacity: 0.75;
+  margin-top: 0.5rem;
+}

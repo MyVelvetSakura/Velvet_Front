@@ -1,33 +1,85 @@
 .overlay {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.55);
+  background: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(2px);
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 999;
+  padding: 1rem;
+  animation: fadeIn 0.2s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }
 
 .modal {
-  background: #0d0d14;
-  color: #fff;
-  border: 1px solid #534AB7;
-  border-radius: 12px;
-  padding: 1.8rem;
-  min-width: 320px;
-  max-width: 90vw;
+  position: relative;
+  background: var(--color-cream-white);
+  color: var(--color-text);
+  padding: 2.2rem 2rem;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 440px;
+  max-height: 85vh;
+  overflow-y: auto;
+  text-align: center;
+  border: 1px solid var(--color-border-soft);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.25);
+  animation: popIn 0.25s ease-out;
+}
+
+@keyframes popIn {
+  from { opacity: 0; transform: scale(0.92) translateY(10px); }
+  to   { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+.contentWrapper {
+  position: relative;
+  z-index: 1;
 }
 
 .title {
-  margin-bottom: 1rem;
+  font-family: var(--font-primary);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-text);
+  margin: 0 0 1.2rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 1px solid var(--color-border-soft);
 }
 
 .content {
-  margin-bottom: 1.4rem;
+  color: var(--color-text);
+  margin-bottom: 1.6rem;
+}
+
+.content input[type="text"],
+.content input[type="password"] {
+  width: 100%;
+  padding: 0.7rem 0.9rem;
+  border-radius: 10px;
+  border: 1px solid var(--color-border-soft);
+  background: transparent;
+  color: var(--color-text);
+  font-family: var(--font-primary);
+  font-size: 0.95rem;
+  outline: none;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease;
+}
+
+.content input[type="text"]:focus,
+.content input[type="password"]:focus {
+  border-color: var(--color-magic-pink);
 }
 
 .actions {
   display: flex;
-  justify-content: flex-end;
-  gap: 0.8rem;
+  justify-content: center;
+  gap: 0.9rem;
+  flex-wrap: wrap;
 }

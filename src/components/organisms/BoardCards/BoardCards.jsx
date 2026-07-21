@@ -3,8 +3,12 @@ import { useEffect, useState } from "react";
 import Deck from "../../molecules/Deck/Deck";
 import { apiSakura } from "../../../services/api";
 import { useNavigate } from "react-router";
+import apiProgress from "../../../services/apiProgress";
+import useToast from "../../../hooks/useToast";
 
-const BoardCards = ({ deckType, question }) => {
+const RETRY_COST = 15;
+
+const BoardCards = ({ deckType, question, user }) => {
   const [deck, setDeck] = useState([]);
   const [masterDeck, setMasterDeck] = useState([]);
   const navigate = useNavigate();
@@ -16,6 +20,7 @@ const BoardCards = ({ deckType, question }) => {
 
   const canReveal = slots.past && slots.present && slots.future;
   const [revealed, setRevealed] = useState(false);
+  const { toast } = useToast();
 
    useEffect(() => {
     const loadData = async () => {
@@ -73,16 +78,24 @@ const BoardCards = ({ deckType, question }) => {
     setDeck(deckToShuffle.sort(() => Math.random() - 0.5));
   };
 
-  const resetGame = () => {
-    setSlots({
-      past: null,
-      present: null,
-      future: null,
-    });
-    setRevealed(false);
-    shuffleDeck(masterDeck);
-  };
+  const resetGame = async () => {
+        try {
+            const dbProgress = apiProgress();
+            const canRetry = await dbProgress.spendForRetry(user.id);
+            if (!canRetry) {
+                toast.error(`Necesitas ${RETRY_COST} Plumas de Yue para reiniciar la tirada`);
+                return;
+            }
+            setSlots({ past: null, present: null, future: null });
+            setRevealed(false);
+            shuffleDeck(masterDeck);
+            toast.success(`Tirada reiniciada. -${RETRY_COST} 🪶`);
+        } catch (error) {
+            toast.error("No se pudo procesar el reinicio");
+        }
+    };
 
+    
   return (
     <>
       <div className={styles.container_board}>

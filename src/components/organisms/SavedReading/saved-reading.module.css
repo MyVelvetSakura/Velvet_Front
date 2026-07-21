@@ -177,6 +177,62 @@
   align-items: center;
 }
 
+.interpretationTrigger {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: center;
+  margin: 1.5rem 0;
+}
+
+.interpretationBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--color-btn-bg);
+  color: var(--color-btn-text);
+  border: 1px solid var(--color-btn-border);
+  border-radius: 24px;
+  padding: 0.8rem 1.8rem;
+  font-family: var(--font-primary);
+  font-size: 0.95rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 14px var(--color-shadow-soft);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.interpretationBtn:hover:not(:disabled) {
+  background: var(--color-btn-bg-hover);
+  color: var(--color-btn-text-hover);
+  transform: scale(1.04);
+  box-shadow: 0 6px 18px var(--color-accent-glow);
+}
+
+.interpretationBtn:disabled {
+  opacity: 0.7;
+  cursor: default;
+}
+
+.interpretationText {
+  color: var(--color-text);
+  line-height: 1.75;
+  white-space: pre-line;
+  text-align: left;
+  font-size: 0.95rem;
+  max-height: 60vh;
+  overflow-y: auto;
+  padding-right: 0.5rem;
+}
+
+.interpretationText::-webkit-scrollbar {
+  width: 6px;
+}
+
+.interpretationText::-webkit-scrollbar-thumb {
+  background: var(--color-border-soft);
+  border-radius: 10px;
+}
+
 @media (max-width: 768px) {
   .desktop {
     display: none;

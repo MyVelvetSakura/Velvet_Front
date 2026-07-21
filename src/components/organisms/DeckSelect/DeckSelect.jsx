@@ -1,12 +1,14 @@
 import { useState } from "react";
 import styles from "./deck-select.module.css";
 import useTheme from "../../../hooks/useTheme";
+import { useNavigate } from "react-router";
 
 const SAKURA_REVERSE = "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg";
 const CLOW_REVERSE = "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg";
 
 const DeckSelect = ({ onSelect }) => {
   const { setTheme } = useTheme();
+  const navigate = useNavigate();
   const [hovered, setHovered] = useState(null);
 
   const handleHover = (deck) => {
@@ -17,10 +19,10 @@ const DeckSelect = ({ onSelect }) => {
     setHovered(null);
   };
 
-  const handleSelect = (deck) => {
+ const handleSelect = (deck) => {
     setTheme(deck === "CLOW" ? "clow" : "sakura");
     navigate("/readings/question", { state: { deckType: deck } });
-};
+  };
 
   return (
     <div className={styles.container}>

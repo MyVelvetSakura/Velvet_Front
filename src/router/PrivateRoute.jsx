@@ -1,10 +1,13 @@
 import { Navigate, Outlet } from "react-router";
 import useAuth from "../hooks/useAuth";
+import { isTokenExpired } from "../utils/jwt";
 
 const PrivateRoute = () => {
-    const { user } = useAuth();
+    const { user, logout } = useAuth();
+    const token = localStorage.getItem("token");
 
-    if (!user) {
+    if (!user || !token || isTokenExpired(token)) {
+        if (user) logout();
         return <Navigate to="/home" replace />;
     }
 
