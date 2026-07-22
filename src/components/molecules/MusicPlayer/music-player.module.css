@@ -1,0 +1,118 @@
+.container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 500;
+}
+
+.toggleBtn {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  border: 1px solid var(--color-border-soft);
+  background: var(--color-cream-white);
+  font-size: 1.4rem;
+  cursor: pointer;
+  box-shadow: 0 4px 14px var(--color-shadow-soft);
+  transition: var(--transition-soft);
+}
+
+.toggleBtn:hover {
+  transform: scale(1.08);
+}
+
+.panel {
+  position: absolute;
+  bottom: 64px;
+  right: 0;
+  width: 260px;
+  background: var(--color-cream-white);
+  border: 1px solid var(--color-border-soft);
+  border-radius: var(--radius-lg);
+  padding: 1rem;
+  box-shadow: 0 12px 32px rgba(0,0,0,0.25);
+  animation: popIn 0.2s ease-out;
+}
+
+@keyframes popIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.title {
+  font-family: var(--font-primary);
+  color: var(--color-text);
+  margin: 0 0 0.8rem;
+  text-align: center;
+}
+
+.modeRow {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-bottom: 0.8rem;
+}
+
+.modeBtn {
+  background: transparent;
+  border: 1px solid var(--color-border-soft);
+  color: var(--color-text);
+  border-radius: 12px;
+  padding: 0.4rem 0.6rem;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: var(--transition-soft);
+}
+
+.modeBtn.active {
+  background: var(--color-btn-bg);
+  color: var(--color-btn-text);
+  border-color: var(--color-btn-border);
+}
+
+.select {
+  width: 100%;
+  padding: 0.4rem;
+  border-radius: 8px;
+  border: 1px solid var(--color-border-soft);
+  background: transparent;
+  color: var(--color-text);
+  margin-bottom: 0.8rem;
+  font-family: var(--font-primary);
+  font-size: 0.85rem;
+}
+
+.nowPlaying {
+  font-size: 0.8rem;
+  color: var(--color-text);
+  text-align: center;
+  opacity: 0.85;
+  margin-bottom: 0.6rem;
+}
+
+.controlsRow {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.6rem;
+}
+
+.playBtn {
+  background: var(--color-btn-bg);
+  color: var(--color-btn-text);
+  border: 1px solid var(--color-btn-border);
+  border-radius: 16px;
+  padding: 0.4rem 1rem;
+  font-size: 0.85rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.volumeRow {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.volumeSlider {
+  flex: 1;
+}

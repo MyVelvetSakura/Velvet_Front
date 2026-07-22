@@ -79,6 +79,7 @@ const BoardCards = ({ deckType, question, user }) => {
   };
 
   const resetGame = async () => {
+    console.log("resetGame ejecutado, user:", user);
         try {
             const dbProgress = apiProgress();
             const canRetry = await dbProgress.spendForRetry(user.id);

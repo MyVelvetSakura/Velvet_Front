@@ -1,5 +1,6 @@
 import { useState } from "react";
 import styles from "./deck.module.css";
+import { SHUFFLE_SFX_SRC } from "../../../constants/soundtrack";
 
 const Deck = ({ deck, onCardClick, onShuffle, slots = {}, placeCard }) => {
 
@@ -14,13 +15,21 @@ const Deck = ({ deck, onCardClick, onShuffle, slots = {}, placeCard }) => {
         }, 300);
     };
 
-    const shuffleDeck = () => {
-        setIsShuffling(true);
-        onShuffle();
-        setTimeout(() => setIsShuffling(false), 500);
-    };
 
     const isDeckDisabled = slots.past && slots.present && slots.future;
+
+    const playShuffleSfx = () => {
+    const sfx = new Audio(SHUFFLE_SFX_SRC);
+    sfx.volume = 0.6;
+    sfx.play().catch(() => {});
+};
+
+const shuffleDeck = () => {
+    setIsShuffling(true);
+    playShuffleSfx();
+    onShuffle();
+    setTimeout(() => setIsShuffling(false), 500);
+};
 
     return (
         <>
