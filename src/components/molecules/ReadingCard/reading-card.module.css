@@ -3,9 +3,12 @@
     align-items: center; 
     flex-direction: column;          
     padding: 15px;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #eee;    
+    /*width: 100%;*/
+    max-width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
 }
-
 .infoSection {
     display: flex;
     flex-direction: column;
@@ -16,29 +19,29 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 5px;   
-    padding-bottom: 25px;         
+    gap: 8px;   
+    padding-bottom: 15px;
+    width: 100%;         
 }
-.editInput{
+.editInput {
     border: 1px solid var(--color-border-soft);
     background-color: var(--color-cream-white);
     color: var(--color-text);
-    margin-left: 60px;
+    margin: 0; 
     border-radius: 4px;
     text-align: center;
     font-size: 1rem;       
     font-family: inherit;  
-    width: 150px;         
+    width: 140px;
     outline: none;        
     transition: all 0.2s ease;
 }
-
 .img_card {
   cursor: pointer;
   width: 90px;
   height: 90px;
   border-radius: 50%;
-  object-fit: cover; /* ← esta línea es la clave */
+  object-fit: cover;
   transition: transform 0.35s ease, filter 0.35s ease;
   filter: drop-shadow(0 0 0 transparent);
   transform-style: preserve-3d;
@@ -71,7 +74,7 @@
   position: relative;
   display: inline-flex;
   cursor: pointer;
-  perspective: 400px; /* necesario para que el giro 3D se note */
+  perspective: 400px;
 }
 
 .iconWrapper::after {

@@ -18,7 +18,7 @@ const History = () => {
                     <p>Para borrar el historial haz click en Borrar</p>
                 </div>
             </header>
-            <section>
+            <section className={styles.section_cards}>
                 <HistoryCards userId={user.id} />
             </section>
         </main>

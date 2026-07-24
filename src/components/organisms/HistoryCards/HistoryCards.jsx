@@ -6,10 +6,13 @@ import Button from "../../atoms/Button/Button";
 import DropButton from "../../molecules/DropButton/DropButton";
 import useToast from "../../../hooks/useToast";
 
+const ITEMS_PER_PAGE = 15;
+
 const HistoryCards = ({userId}) => {
-   const { toast } = useToast();
+    const { toast } = useToast();
     const [reading,setReading]= useState([]);
     const [refresh, setRefresh] = useState(false);
+    const [currentPage, setCurrentPage] = useState(1);
     const triggerRefresh = () => setRefresh(prev => !prev);
     
     const dbReading = apiReading();
@@ -36,25 +39,74 @@ const HistoryCards = ({userId}) => {
     })
  }, [userId, refresh]);
 
+ const totalPages = Math.ceil(reading.length / ITEMS_PER_PAGE);
+    const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
+    const paginatedReadings = reading.slice(startIndex, startIndex + ITEMS_PER_PAGE);
+
+    const goToPage = (page) => {
+        if (page < 1 || page > totalPages) return;
+        setCurrentPage(page);
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    };
+
+    const handleDeleteWithPageCheck = () => {
+        triggerRefresh();
+        if (paginatedReadings.length === 1 && currentPage > 1) {
+            setCurrentPage((prev) => prev - 1);
+        }
+    };
+
+    console.log("Total lecturas:", reading.length, "Página actual:", currentPage, "Mostrando:", paginatedReadings.length);
+
 return(
     <>
     {reading && reading.length > 0 ?(
         <section>
     <div className= {styles.card}>
-    {reading.map((item) => (
-        <ReadingCard 
-            key={item.id} 
-            data={item} 
-            onDelete= {triggerRefresh}
-            
+    {paginatedReadings.map((item) => (
+        <ReadingCard
+            key={item.id}
+            data={item}
+            onDelete={handleDeleteWithPageCheck}
         />
 ))}
     </div>
+
+    {totalPages > 1 && (
+        <div className={styles.pagination}>
+            <button
+                className={styles.pageArrow}
+                onClick={() => goToPage(currentPage - 1)}
+                disabled={currentPage === 1}
+            >
+                ‹
+            </button>
+
+            {Array.from({ length: totalPages }).map((_, i) => (
+                <button
+                    key={i}
+                    className={`${styles.pageNumber} ${currentPage === i + 1 ? styles.activePage : ""}`}
+                    onClick={() => goToPage(i + 1)}
+                >
+                    {i + 1}
+                </button>
+            ))}
+
+            <button
+                className={styles.pageArrow}
+                onClick={() => goToPage(currentPage + 1)}
+                disabled={currentPage === totalPages}
+            >
+                ›
+            </button>
+        </div>
+    )}
+
     <div className={styles.drop_btn}><DropButton userId= {userId} onDelete={triggerRefresh}/></div>
     </section>
     ):(
          <section className= {styles.no_cards}>
-            <img className={styles.img_no_cards} src="/src/assets/images/notfound.png" alt="No hay lecturas disponibles"/>
+            <img className={styles.img_no_cards} src="/src/assets/images/notfound.png" alt="no hay resultados"/>
             <p> No hay lecturas guardadas. Revela ahora tu destino.</p>
             <Button BtnClass="subm_btn" path="/readings" text= "Inicio" />
          </section>
