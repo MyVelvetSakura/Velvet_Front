@@ -33,7 +33,12 @@ const apiReading = () => {
     return response.data;
 };
 
-return { getByUserId, createReading, editName, deleteReading, deleteAllByUserId, getById };
+const getByUserIdPaginated = async (userId, page, size = 15) => {
+    const response = await httpClient.get("/readings", { params: { userId, page, size } });
+    return response.data;
+};
+
+return { getByUserId, createReading, editName, deleteReading, deleteAllByUserId, getById, getByUserIdPaginated };
 };
 
 export default apiReading;

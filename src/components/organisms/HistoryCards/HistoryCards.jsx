@@ -4,42 +4,24 @@ import ReadingCard from "../../molecules/ReadingCard/ReadingCard";
 import styles from "./history-cards.module.css"
 import Button from "../../atoms/Button/Button";
 import DropButton from "../../molecules/DropButton/DropButton";
-import useToast from "../../../hooks/useToast";
 
 const ITEMS_PER_PAGE = 15;
 
 const HistoryCards = ({userId}) => {
-    const { toast } = useToast();
     const [reading,setReading]= useState([]);
     const [refresh, setRefresh] = useState(false);
     const [currentPage, setCurrentPage] = useState(1);
     const triggerRefresh = () => setRefresh(prev => !prev);
-    
+
     const dbReading = apiReading();
 
-    const handleSave = async() => {
-      setNameExists(false);
-      if (tempName === user.name) { setIsEditing(false); return; }
-      try {
-        const updated = await db.editAccount(user.id, tempName);
-        setIsEditing(false);
-        login({ ...user, name: updated.name });
-        toast.success("Nombre actualizado");
-      } catch (error) {
-        if (error.response?.status === 400) {
-          setNameExists(true);
-        } else {
-          toast.error("No se pudo guardar el cambio.");
-        }
-      }
-};
- useEffect(() => {
-    dbReading.getByUserId(userId).then(data =>{
-        setReading(data)
-    })
- }, [userId, refresh]);
+    useEffect(() => {
+        dbReading.getByUserId(userId).then(data =>{
+            setReading(data)
+        })
+     }, [userId, refresh]);
 
- const totalPages = Math.ceil(reading.length / ITEMS_PER_PAGE);
+    const totalPages = Math.ceil(reading.length / ITEMS_PER_PAGE);
     const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
     const paginatedReadings = reading.slice(startIndex, startIndex + ITEMS_PER_PAGE);
 
@@ -55,8 +37,6 @@ const HistoryCards = ({userId}) => {
             setCurrentPage((prev) => prev - 1);
         }
     };
-
-    console.log("Total lecturas:", reading.length, "Página actual:", currentPage, "Mostrando:", paginatedReadings.length);
 
 return(
     <>

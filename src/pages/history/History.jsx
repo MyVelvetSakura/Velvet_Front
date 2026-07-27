@@ -1,5 +1,6 @@
 import useAuth from "../../hooks/useAuth";
 import HistoryCards from "../../components/organisms/historyCards/HistoryCards";
+import ScrollToTopHistory from "../../components/atoms/ScrollToTopHistory/ScrollToTopHistory";
 import styles from "./history.module.css";
 
 const History = () => {
@@ -10,6 +11,7 @@ const History = () => {
     }
 
     return (
+         <>
         <main>
             <header className={styles.header_section}>
                 <div>
@@ -22,6 +24,8 @@ const History = () => {
                 <HistoryCards userId={user.id} />
             </section>
         </main>
+        <ScrollToTopHistory />
+        </>
     )
 }
 
