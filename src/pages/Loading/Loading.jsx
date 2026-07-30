@@ -37,18 +37,21 @@ const Loading = () => {
         });
 
         Promise.all(promises).then(() => {
-            const token = localStorage.getItem("token");
+        const token = localStorage.getItem("token");
+        const hasSeenIntro = localStorage.getItem("hasSeenIntro");
 
-            setTimeout(() => {
-                if (user && token && !isTokenExpired(token)) {
-                    navigate("/readings", { replace: true });
-                } else {
-                    if (user) logout();
-                    navigate("/home", { replace: true });
-                }
-            }, 500);
-        });
-    }, [navigate, user, logout]);
+        setTimeout(() => {
+            if (user && token && !isTokenExpired(token)) {
+                navigate("/readings", { replace: true });
+            } else if (!hasSeenIntro) {
+                navigate("/intro", { replace: true });
+            } else {
+                if (user) logout();
+                navigate("/home", { replace: true });
+            }
+        }, 500);
+    });
+}, [navigate, user, logout]);
 
     return (
         <>

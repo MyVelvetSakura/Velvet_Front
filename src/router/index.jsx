@@ -16,6 +16,8 @@ import Profile from "../pages/Profile/Profile";
 import ConfirmDeleteAccount from "../pages/ConfirmDeleteAccount/ConfirmDeleteAccount";
 import PrivateRoute from "./PrivateRoute";
 import AskQuestion from "../pages/AskQuestion/AskQuestion";
+import Intro from "../pages/Intro/Intro";
+
 
 export const router = createBrowserRouter([
   {
@@ -23,6 +25,7 @@ export const router = createBrowserRouter([
     Component: RootProviders,
     children: [
       { index: true, Component: Loading },
+      { path: "/intro", Component: Intro },
       { path: "/verify-account", Component: VerifyAccount },
       { path: "/forgot-password", Component: ForgotPassword },
       { path: "/reset-password", Component: ResetPassword },

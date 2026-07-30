@@ -12,7 +12,6 @@ import useToast from "../../../hooks/useToast";
 import apiInterpretation from "../../../services/apiInterpretation";
 import InterpretationModalBackground from "../../molecules/InterpretationModalBackground/InterpretationModalBackground";
 
-
 const TarotDeck = ({ user }) => {
   const { state } = useLocation();
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -33,11 +32,11 @@ const TarotDeck = ({ user }) => {
     useState(false);
 
   useEffect(() => {
-    if (!question || !past || !present || !future) return;
+    if (!past || !present || !future) return;
 
     setLoadingInterpretation(true);
     const db = apiInterpretation();
-    db.generate(question, past.id, present.id, future.id)
+    db.generate(question || "", past.id, present.id, future.id)
       .then((res) => setInterpretation(res.interpretation))
       .catch(() =>
         setInterpretation(
@@ -184,34 +183,35 @@ const TarotDeck = ({ user }) => {
         )}
       </div>
 
-      {question && (
-        <div className={styles.interpretationTrigger}>
-          <button
-            className={styles.interpretationBtn}
-            onClick={() => setIsInterpretationModalOpen(true)}
-            disabled={loadingInterpretation}
-          >
-            {loadingInterpretation
-              ? "Consultando el destino..."
-              : "🔮 Ver la respuesta de las cartas"}
-          </button>
-        </div>
-      )}
+      <div className={styles.interpretationTrigger}>
+        <button
+          className={styles.interpretationBtn}
+          onClick={() => setIsInterpretationModalOpen(true)}
+          disabled={loadingInterpretation}
+        >
+          {loadingInterpretation
+            ? "Consultando el destino..."
+            : "🔮 Ver la respuesta de las cartas"}
+        </button>
+      </div>
 
       {isInterpretationModalOpen && (
-    <Modal
-        title="La respuesta de las cartas"
-        onClose={() => setIsInterpretationModalOpen(false)}
-        background={<InterpretationModalBackground />}
-        actions={
-            <button className={styles.subm_btn} onClick={() => setIsInterpretationModalOpen(false)}>
-                Cerrar
+        <Modal
+          title="La respuesta de las cartas"
+          onClose={() => setIsInterpretationModalOpen(false)}
+          background={<InterpretationModalBackground />}
+          actions={
+            <button
+              className={styles.subm_btn}
+              onClick={() => setIsInterpretationModalOpen(false)}
+            >
+              Cerrar
             </button>
-        }
-    >
-        <p className={styles.interpretationText}>{interpretation}</p>
-    </Modal>
-)}
+          }
+        >
+          <p className={styles.interpretationText}>{interpretation}</p>
+        </Modal>
+      )}
       {showActions && (
         <div className={styles.actions}>
           <input

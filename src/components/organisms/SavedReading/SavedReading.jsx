@@ -91,7 +91,7 @@ const SavedReading = () => {
           </div>
         ))}
 
-        {readingData?.question && (
+        {readingData?.interpretation && (
     <div className={styles.interpretationTrigger}>
         <button
             className={styles.interpretationBtn}
