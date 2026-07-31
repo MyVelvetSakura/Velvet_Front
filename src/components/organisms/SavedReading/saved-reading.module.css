@@ -263,7 +263,7 @@
     cursor: pointer;
     position: absolute;
     top: 43%;
-    left: -50%;
+    left: -40%;
   }
 
   .arrow_right {
@@ -272,7 +272,7 @@
     cursor: pointer;
     position: absolute;
     top: 43%;
-    right: -50%;
+    right: -40%;
   }
 
   .card_name {

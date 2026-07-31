@@ -17,40 +17,57 @@ const SavedReading = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const { getCardById } = apiSakura();
   const dbReadings = apiReading();
-  const readingId = state.id;
   const [cards, setCards] = useState([]);
   const [isDeleteConfirmOpen, setIsDeleteConfirmOpen] = useState(false);
   const { toast } = useToast();
   const [readingData, setReadingData] = useState(null);
-  const [isInterpretationModalOpen, setIsInterpretationModalOpen] = useState(false);
+  const [isInterpretationModalOpen, setIsInterpretationModalOpen] =
+    useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkIfMobile = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    checkIfMobile();
+    window.addEventListener("resize", checkIfMobile);
+
+    return () => {
+      window.removeEventListener("resize", checkIfMobile);
+    };
+  }, []);
 
   useEffect(() => {
     if (!state) return;
 
     const loadCards = async () => {
-        try {
-            const past = await getCardById(state.past);
-            const present = await getCardById(state.present);
-            const future = await getCardById(state.future);
+      try {
+        const past = await getCardById(state.past);
+        const present = await getCardById(state.present);
+        const future = await getCardById(state.future);
 
-            setCards([
-                { ...past, stage: "Pasado" },
-                { ...present, stage: "Presente" },
-                { ...future, stage: "Futuro" },
-            ]);
+        setCards([
+          { ...past, stage: "Pasado" },
+          { ...present, stage: "Presente" },
+          { ...future, stage: "Futuro" },
+        ]);
 
-            const reading = await dbReadings.getById(state.id);
-            setReadingData(reading);
-        } catch (error) {
-            console.error("Error cargando cartas:", error);
-        }
+        const reading = await dbReadings.getById(state.id);
+        setReadingData(reading);
+      } catch (error) {
+        console.error("Error cargando cartas:", error);
+      }
     };
     loadCards();
-}, [state]);
+  }, [state]);
 
   if (!state || cards.length === 0) {
     return <p>Cargando lectura...</p>;
   }
+
+  const showActions =
+    !isMobile || (isMobile && currentIndex === cards.length - 1);
 
   const handlePrev = () => {
     setCurrentIndex((prev) => (prev === 0 ? 2 : prev - 1));
@@ -90,41 +107,6 @@ const SavedReading = () => {
             </div>
           </div>
         ))}
-
-        {readingData?.interpretation && (
-    <div className={styles.interpretationTrigger}>
-        <button
-            className={styles.interpretationBtn}
-            onClick={() => setIsInterpretationModalOpen(true)}
-        >
-            🔮 Ver la respuesta de las cartas
-        </button>
-    </div>
-)}
-
-{isInterpretationModalOpen && (
-    <Modal
-        title="La respuesta de las cartas"
-        onClose={() => setIsInterpretationModalOpen(false)}
-        background={<InterpretationModalBackground />}
-        actions={
-            <button className={styles.subm_btn} onClick={() => setIsInterpretationModalOpen(false)}>
-                Cerrar
-            </button>
-        }
-    >
-        <p className={styles.interpretationText}>{readingData.interpretation}</p>
-    </Modal>
-)}
-        <div className={styles.actions}>
-          <input
-            className={styles.subm_btn}
-            type="button"
-            value="Eliminar"
-            onClick={() => setIsDeleteConfirmOpen(true)}
-          />
-          <Button text="Atrás" BtnClass={styles.reset_btn} path="/history" />
-        </div>
       </div>
 
       <div className={styles.mobile}>
@@ -158,16 +140,49 @@ const SavedReading = () => {
         </div>
       </div>
 
-      {currentIndex === cards.length - 1 && (
-        <div className={styles.actions}>
-          <input
-            className={styles.subm_btn}
-            type="button"
-            value="Eliminar"
-            onClick={() => setIsDeleteConfirmOpen(true)}
-          />
-          <Button text="Atrás" BtnClass={styles.reset_btn} path="/history" />
-        </div>
+      {showActions && (
+        <>
+          {readingData?.interpretation && (
+            <div className={styles.interpretationTrigger}>
+              <button
+                className={styles.interpretationBtn}
+                onClick={() => setIsInterpretationModalOpen(true)}
+              >
+                🔮 Ver la respuesta de las cartas
+              </button>
+            </div>
+          )}
+
+          <div className={styles.actions}>
+            <input
+              className={styles.subm_btn}
+              type="button"
+              value="Eliminar"
+              onClick={() => setIsDeleteConfirmOpen(true)}
+            />
+            <Button text="Atrás" BtnClass={styles.reset_btn} path="/history" />
+          </div>
+        </>
+      )}
+
+      {isInterpretationModalOpen && (
+        <Modal
+          title="La respuesta de las cartas"
+          onClose={() => setIsInterpretationModalOpen(false)}
+          background={<InterpretationModalBackground />}
+          actions={
+            <button
+              className={styles.subm_btn}
+              onClick={() => setIsInterpretationModalOpen(false)}
+            >
+              Cerrar
+            </button>
+          }
+        >
+          <p className={styles.interpretationText}>
+            {readingData?.interpretation}
+          </p>
+        </Modal>
       )}
 
       {isDeleteConfirmOpen && (

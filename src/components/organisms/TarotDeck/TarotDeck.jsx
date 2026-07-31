@@ -32,6 +32,19 @@ const TarotDeck = ({ user }) => {
     useState(false);
 
   useEffect(() => {
+    const checkIfMobile = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    checkIfMobile();
+    window.addEventListener("resize", checkIfMobile);
+
+    return () => {
+      window.removeEventListener("resize", checkIfMobile);
+    };
+  }, []);
+
+  useEffect(() => {
     if (!past || !present || !future) return;
 
     setLoadingInterpretation(true);
@@ -46,6 +59,10 @@ const TarotDeck = ({ user }) => {
       .finally(() => setLoadingInterpretation(false));
   }, []);
 
+  if (!state) {
+    return <p>No hay cartas seleccionadas</p>;
+  }
+
   const cards = [
     { ...past, stage: "Pasado" },
     { ...present, stage: "Presente" },
@@ -53,11 +70,7 @@ const TarotDeck = ({ user }) => {
   ];
 
   const showActions =
-    !isMobile || (isMobile && cards[currentIndex]?.stage === "Futuro");
-
-  if (!state) {
-    return <p>No hay cartas seleccionadas</p>;
-  }
+    !isMobile || (isMobile && currentIndex === cards.length - 1);
 
   const handlePrev = () => {
     setCurrentIndex((prev) => (prev === 0 ? 2 : prev - 1));
@@ -86,7 +99,6 @@ const TarotDeck = ({ user }) => {
     };
 
     try {
-      console.log("Guardando lectura con:", dataReading);
       await dbReadings.createReading(dataReading);
       setIsModalOpen(false);
       setReadingName("");
@@ -101,7 +113,7 @@ const TarotDeck = ({ user }) => {
   return (
     <>
       <div className={styles.desktop}>
-        <div key={cards.stage} className={styles.card_block}>
+        <div key="past" className={styles.card_block}>
           <h3 className={styles.card_title}>Pasado</h3>
           <h4 className={styles.card_name}>{past.spanishName.toUpperCase()}</h4>
           <img
@@ -114,7 +126,7 @@ const TarotDeck = ({ user }) => {
           </div>
         </div>
 
-        <div key={cards.stage} className={styles.card_block}>
+        <div key="present" className={styles.card_block}>
           <h3 className={styles.card_title}>Presente</h3>
           <h4 className={styles.card_name}>
             {present.spanishName.toUpperCase()}
@@ -130,7 +142,7 @@ const TarotDeck = ({ user }) => {
           </div>
         </div>
 
-        <div key={cards.stage} className={styles.card_block}>
+        <div key="future" className={styles.card_block}>
           <h3 className={styles.card_title}>Futuro</h3>
           <h4 className={styles.card_name}>
             {future.spanishName.toUpperCase()}
@@ -183,17 +195,36 @@ const TarotDeck = ({ user }) => {
         )}
       </div>
 
-      <div className={styles.interpretationTrigger}>
-        <button
-          className={styles.interpretationBtn}
-          onClick={() => setIsInterpretationModalOpen(true)}
-          disabled={loadingInterpretation}
-        >
-          {loadingInterpretation
-            ? "Consultando el destino..."
-            : "🔮 Ver la respuesta de las cartas"}
-        </button>
-      </div>
+      {showActions && (
+        <>
+          <div className={styles.interpretationTrigger}>
+            <button
+              className={styles.interpretationBtn}
+              onClick={() => setIsInterpretationModalOpen(true)}
+              disabled={loadingInterpretation}
+            >
+              {loadingInterpretation
+                ? "Consultando el destino..."
+                : "🔮 Ver la respuesta de las cartas"}
+            </button>
+          </div>
+
+          <div className={styles.actions}>
+            <input
+              className={styles.subm_btn}
+              type="button"
+              value="Guardar"
+              onClick={() => setIsModalOpen(true)}
+            />
+
+            <Button
+              text="Reiniciar"
+              BtnClass={styles.reset_btn}
+              path="/readings"
+            />
+          </div>
+        </>
+      )}
 
       {isInterpretationModalOpen && (
         <Modal
@@ -211,22 +242,6 @@ const TarotDeck = ({ user }) => {
         >
           <p className={styles.interpretationText}>{interpretation}</p>
         </Modal>
-      )}
-      {showActions && (
-        <div className={styles.actions}>
-          <input
-            className={styles.subm_btn}
-            type="button"
-            value="Guardar"
-            onClick={() => setIsModalOpen(true)}
-          />
-
-          <Button
-            text="Reiniciar"
-            BtnClass={styles.reset_btn}
-            path="/readings"
-          />
-        </div>
       )}
 
       {isModalOpen && (
