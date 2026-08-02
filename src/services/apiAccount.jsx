@@ -38,9 +38,10 @@ const apiAccount = () => {
     return response.data;
   };
 
-  const resetPassword = async (token, newPassword) => {
+  const resetPassword = async (email, code, newPassword) => {
     const response = await httpClient.post("/accounts/reset-password", {
-      token,
+      email,
+      code,
       newPassword,
     });
     return response.data;
