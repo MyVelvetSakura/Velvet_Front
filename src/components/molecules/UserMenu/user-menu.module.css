@@ -59,9 +59,16 @@
     box-shadow: 0 8px 20px var(--color-shadow-soft);
     list-style: none;
     margin: 0;
+    padding: 0.3rem;
     width: 180px;
     z-index: 50;
     animation: dropIn 0.18s ease-out;
+    overflow: hidden; 
+}
+
+.dropdown li {
+    margin: 0;
+    padding: 0;
 }
 
 @keyframes dropIn {
