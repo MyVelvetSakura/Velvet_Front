@@ -38,6 +38,11 @@ main {
     font-weight: bold;
 }
 
+.currentName,
+.userName {
+  text-transform: capitalize;
+}
+
 @media (min-width: 890px) {
     .header_section {
         flex-direction: row;

@@ -163,3 +163,8 @@
   opacity: 0.75;
   margin-top: 0.5rem;
 }
+
+.currentName,
+.userName {
+  text-transform: capitalize;
+}

@@ -7,9 +7,16 @@ import useToast from "../../../hooks/useToast";
 import Modal from "../../molecules/Modal/Modal";
 import AvatarGallery from "../../molecules/AvatarGallery/AvatarGallery";
 import { AVATARS } from "../../../constants/avatars";
+import PasswordInput from "../../atoms/PasswordInput/PasswordInput";
 
-function RegForm(){
-  const [form, setForm] = useState({name: "", email: "", password: "", avatarKey: "default"});
+function RegForm() {
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    password: "",
+    avatarKey: "default",
+  });
+  const capitalize = (str) => str.charAt(0).toUpperCase() + str.slice(1);
   const [isAvatarModalOpen, setIsAvatarModalOpen] = useState(false);
   const { toast } = useToast();
   const dbAccount = apiAccount();
@@ -28,6 +35,10 @@ function RegForm(){
       ...form,
       [name]: value,
     });
+  };
+
+  const handleCancel = () => {
+    navigate(-1);
   };
 
   const handleSubmit = async (event) => {
@@ -78,7 +89,7 @@ function RegForm(){
 
   return (
     <>
-     <form className={styles.reg_form} onSubmit={handleSubmit}>
+      <form className={styles.reg_form} onSubmit={handleSubmit}>
         <div className={styles.field_form}>
           <label htmlFor="name" className={styles.label_login}>
             Introduce un alias:
@@ -91,6 +102,7 @@ function RegForm(){
             tabIndex={1}
             className={styles.input_login}
             onChange={handleChange}
+            placeholder="Alias"
           />
           <span
             id="nameError"
@@ -112,6 +124,7 @@ function RegForm(){
             tabIndex={2}
             className={styles.input_login}
             onChange={handleChange}
+            placeholder="tucorreo@mail.com"
           />
           <span
             id="emailError"
@@ -125,14 +138,12 @@ function RegForm(){
           <label htmlFor="password" className={styles.label_login}>
             Introduce una contraseña:
           </label>
-          <input
-            type="password"
+          <PasswordInput
             id="password"
-            name="password"
-            accessKey="p"
-            tabIndex={3}
-            className={styles.input_login}
+            value={form.password}
             onChange={handleChange}
+            placeholder="Contraseña"
+            className={styles.input_login}
           />
           <span
             id="passError"
@@ -142,42 +153,55 @@ function RegForm(){
           </span>
         </div>
 
-                <div className={styles.field_form}>
+        <div className={styles.field_form}>
           <label className={styles.label_login}>Tu avatar:</label>
           <button
             type="button"
             className={styles.avatarPreviewBtn}
             onClick={() => setIsAvatarModalOpen(true)}
           >
-            <img src={AVATARS[form.avatarKey]} alt="Avatar seleccionado" className={styles.avatarPreviewImg} />
+            <img
+              src={AVATARS[form.avatarKey]}
+              alt="Avatar seleccionado"
+              className={styles.avatarPreviewImg}
+            />
             <span className={styles.changeText}>Cambiar</span>
           </button>
         </div>
 
         <div className={styles.fieldbtn_form}>
+          <button
+            type="button"
+            className={styles.cancel_btn}
+            onClick={handleCancel}
+          >
+            Volver
+          </button>
           <Button BtnClass="subm_btn" text="Confirmar" path="" />
         </div>
-
       </form>
       {isAvatarModalOpen && (
-      <Modal
-        title="Elige tu avatar"
-        onClose={() => setIsAvatarModalOpen(false)}
-        actions={
-          <button className={styles.subm_btn} onClick={() => setIsAvatarModalOpen(false)}>
-            Listo
-          </button>
-        }
-      >
-        <AvatarGallery
-          selected={form.avatarKey}
-          onSelect={(key) => {
-            setForm({ ...form, avatarKey: key });
-            setIsAvatarModalOpen(false);
-          }}
-        />
-      </Modal>
-    )}
+        <Modal
+          title="Elige tu avatar"
+          onClose={() => setIsAvatarModalOpen(false)}
+          actions={
+            <button
+              className={styles.subm_btn}
+              onClick={() => setIsAvatarModalOpen(false)}
+            >
+              Listo
+            </button>
+          }
+        >
+          <AvatarGallery
+            selected={form.avatarKey}
+            onSelect={(key) => {
+              setForm({ ...form, avatarKey: key });
+              setIsAvatarModalOpen(false);
+            }}
+          />
+        </Modal>
+      )}
     </>
   );
 }

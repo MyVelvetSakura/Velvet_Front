@@ -6,6 +6,7 @@ const UserMenu = ({ user, avatarSrc, onLogout }) => {
   const [isOpen, setIsOpen] = useState(false);
   const menuRef = useRef(null);
   const navigate = useNavigate();
+  const capitalize = (str) => str.charAt(0).toUpperCase() + str.slice(1);
 
   useEffect(() => {
     const handleClickOutside = (event) => {

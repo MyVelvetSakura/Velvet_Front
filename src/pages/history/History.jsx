@@ -5,6 +5,7 @@ import styles from "./history.module.css";
 
 const History = () => {
     const { user } = useAuth();
+    const capitalize = (str) => str.charAt(0).toUpperCase() + str.slice(1);
 
     if (!user) {
         return <div className={styles.loading}>Cargando datos de usuario...</div>;

@@ -48,12 +48,35 @@
   font-weight: bold;
   cursor: pointer;
   transition: transform 0.25s ease;
+  min-width: 130px;
+  text-align: center;
 }
 
 .subm_btn:hover {
   background: var(--color-btn-bg-hover);
   color: var(--color-btn-text-hover);
   transform: scale(1.03);
+}
+
+.cancel_btn {
+  width: 173px;
+  height: 54px;
+  border-radius: 20px;
+  background: transparent;
+  color: var(--color-btn-text);
+  border: 1px dashed var(--color-btn-border);
+  font-size: 16px;
+  font-weight: bold;
+  transition: transform 0.25s ease;
+  cursor: pointer;
+}
+
+.cancel_btn:hover {
+  transform: scale(1.08);
+}
+
+.cancel_btn:active {
+  border-color: var(--color-text);
 }
 
 @media (min-width:1200px){

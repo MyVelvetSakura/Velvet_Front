@@ -11,6 +11,7 @@ const Header = () => {
   const { user, logout } = useAuth();
   const { setTheme } = useTheme();
   const navigate = useNavigate();
+  const capitalize = (str) => str.charAt(0).toUpperCase() + str.slice(1);
 
   const handleTitleClick = () => {
     if (user) {

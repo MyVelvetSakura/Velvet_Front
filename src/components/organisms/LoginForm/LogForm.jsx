@@ -7,6 +7,7 @@ import { useNavigate } from "react-router";
 import Avatar from "../../../assets/images/profile_image.png";
 import useAuth from "../../../hooks/useAuth";
 import useToast from "../../../hooks/useToast";
+import PasswordInput from "../../atoms/PasswordInput/PasswordInput";
 
 function LogForm() {
   const [form, setForm] = useState({ name: "", email: "", password: "" });
@@ -38,11 +39,12 @@ function LogForm() {
       login(loggedUser, token);
       navigate("/readings");
     } catch (error) {
-    const message = typeof error.response?.data === "string"
-        ? error.response.data
-        : error.response?.data?.error || "Error al conectar con el servidor";
-    toast.error(message);
-}
+      const message =
+        typeof error.response?.data === "string"
+          ? error.response.data
+          : error.response?.data?.error || "Error al conectar con el servidor";
+      toast.error(message);
+    }
   };
 
   return (
@@ -60,6 +62,7 @@ function LogForm() {
             tabIndex={1}
             className={styles.input_login}
             onChange={handleChange}
+            placeholder="Alias"
           />
         </div>
 
@@ -67,14 +70,12 @@ function LogForm() {
           <label htmlFor="password" className={styles.label_login}>
             Introduce una contraseña:
           </label>
-          <input
-            type="password"
+          <PasswordInput
             id="password"
-            name="password"
-            accessKey="p"
-            tabIndex={2}
-            className={styles.input_login}
+            value={form.password}
             onChange={handleChange}
+            placeholder="Contraseña"
+            className={styles.input_login}
           />
         </div>
 
