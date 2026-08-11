@@ -1,0 +1,1679 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1786440853845" clover="3.2.0">
+  <project timestamp="1786440853846" name="All files">
+    <metrics statements="1010" coveredstatements="953" conditionals="424" coveredconditionals="376" methods="338" coveredmethods="299" elements="1772" coveredelements="1628" complexity="0" loc="1010" ncloc="1010" packages="58" files="163" classes="163"/>
+    <package name="assets.audio.sfx">
+      <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="shuffling-cards.mp3" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\assets\audio\sfx\shuffling-cards.mp3">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="assets.audio.soundtrack">
+      <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="track01.mp3" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\assets\audio\soundtrack\track01.mp3">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="track02.mp3" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\assets\audio\soundtrack\track02.mp3">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="track03.mp3" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\assets\audio\soundtrack\track03.mp3">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="track04.mp3" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\assets\audio\soundtrack\track04.mp3">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="track05.mp3" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\assets\audio\soundtrack\track05.mp3">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="track06.mp3" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\assets\audio\soundtrack\track06.mp3">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="track07.mp3" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\assets\audio\soundtrack\track07.mp3">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="track08.mp3" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\assets\audio\soundtrack\track08.mp3">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="track09.mp3" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\assets\audio\soundtrack\track09.mp3">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="track10.mp3" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\assets\audio\soundtrack\track10.mp3">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="track11.mp3" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\assets\audio\soundtrack\track11.mp3">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="track12.mp3" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\assets\audio\soundtrack\track12.mp3">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="track13.mp3" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\assets\audio\soundtrack\track13.mp3">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="track14.mp3" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\assets\audio\soundtrack\track14.mp3">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="track15.mp3" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\assets\audio\soundtrack\track15.mp3">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="track16.mp3" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\assets\audio\soundtrack\track16.mp3">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="track17.mp3" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\assets\audio\soundtrack\track17.mp3">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="track18.mp3" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\assets\audio\soundtrack\track18.mp3">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="track19.mp3" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\assets\audio\soundtrack\track19.mp3">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="track20.mp3" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\assets\audio\soundtrack\track20.mp3">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="track21.mp3" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\assets\audio\soundtrack\track21.mp3">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="track22.mp3" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\assets\audio\soundtrack\track22.mp3">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="track23.mp3" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\assets\audio\soundtrack\track23.mp3">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="track24.mp3" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\assets\audio\soundtrack\track24.mp3">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="assets.avatars">
+      <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="Syaoran1.png" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\assets\avatars\Syaoran1.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Syaoran2.png" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\assets\avatars\Syaoran2.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Touya1.png" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\assets\avatars\Touya1.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Touya2.png" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\assets\avatars\Touya2.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="kero1.png" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\assets\avatars\kero1.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="kero2.png" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\assets\avatars\kero2.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="meiling1.png" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\assets\avatars\meiling1.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="meiling2.png" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\assets\avatars\meiling2.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="sakura1.png" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\assets\avatars\sakura1.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="sakura2.png" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\assets\avatars\sakura2.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="tomoyo1.png" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\assets\avatars\tomoyo1.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="tomoyo2.png" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\assets\avatars\tomoyo2.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="yue1.png" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\assets\avatars\yue1.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="yue2.png" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\assets\avatars\yue2.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="yukito1.png" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\assets\avatars\yukito1.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="yukito2.png" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\assets\avatars\yukito2.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="assets.images">
+      <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="Logo.png" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\assets\images\Logo.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="flecha_derecha.png" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\assets\images\flecha_derecha.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="flecha_izquierda.png" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\assets\images\flecha_izquierda.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="profile_image.png" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\assets\images\profile_image.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="assets.images.loading">
+      <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="card.png" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\assets\images\loading\card.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="clouds.png" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\assets\images\loading\clouds.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="logo.png" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\assets\images\loading\logo.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="magic-circle.png" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\assets\images\loading\magic-circle.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="sakurachibi.png" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\assets\images\loading\sakurachibi.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="wand.png" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\assets\images\loading\wand.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="components.atoms.Button">
+      <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <file name="Button.jsx" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\components\atoms\Button\Button.jsx">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="4" count="4" type="stmt"/>
+        <line num="5" count="227" type="stmt"/>
+        <line num="6" count="227" type="stmt"/>
+        <line num="8" count="11" type="stmt"/>
+      </file>
+      <file name="button.css" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\components\atoms\Button\button.css">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="components.atoms.CheckButton">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="CheckButton.jsx" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\components\atoms\CheckButton\CheckButton.jsx">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="2" type="stmt"/>
+      </file>
+      <file name="check-button.module.css" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\components\atoms\CheckButton\check-button.module.css">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="components.atoms.EditButton">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="EditButton.jsx" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\components\atoms\EditButton\EditButton.jsx">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="4" count="72" type="stmt"/>
+      </file>
+      <file name="edit-button.module.css" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\components\atoms\EditButton\edit-button.module.css">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="components.atoms.PasswordInput">
+      <metrics statements="4" coveredstatements="4" conditionals="10" coveredconditionals="10" methods="3" coveredmethods="3"/>
+      <file name="PasswordInput.jsx" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\components\atoms\PasswordInput\PasswordInput.jsx">
+        <metrics statements="4" coveredstatements="4" conditionals="10" coveredconditionals="10" methods="3" coveredmethods="3"/>
+        <line num="4" count="4" type="stmt"/>
+        <line num="5" count="271" type="stmt"/>
+        <line num="7" count="271" type="stmt"/>
+        <line num="21" count="3" type="stmt"/>
+      </file>
+      <file name="password-input.module.css" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\components\atoms\PasswordInput\password-input.module.css">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="components.atoms.ScrollToTopHistory">
+      <metrics statements="11" coveredstatements="11" conditionals="2" coveredconditionals="2" methods="5" coveredmethods="5"/>
+      <file name="ScrollToTopHistory.jsx" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\components\atoms\ScrollToTopHistory\ScrollToTopHistory.jsx">
+        <metrics statements="11" coveredstatements="11" conditionals="2" coveredconditionals="2" methods="5" coveredmethods="5"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="8" type="stmt"/>
+        <line num="7" count="8" type="stmt"/>
+        <line num="8" count="4" type="stmt"/>
+        <line num="9" count="4" type="stmt"/>
+        <line num="11" count="4" type="stmt"/>
+        <line num="12" count="4" type="stmt"/>
+        <line num="15" count="8" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="19" count="8" type="cond" truecount="2" falsecount="0"/>
+        <line num="21" count="3" type="stmt"/>
+      </file>
+      <file name="scroll-to-top-history.module.css" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\components\atoms\ScrollToTopHistory\scroll-to-top-history.module.css">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="components.atoms.ThemeDecoration">
+      <metrics statements="40" coveredstatements="40" conditionals="6" coveredconditionals="6" methods="10" coveredmethods="10"/>
+      <file name="ThemeDecoration.jsx" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\components\atoms\ThemeDecoration\ThemeDecoration.jsx">
+        <metrics statements="40" coveredstatements="40" conditionals="6" coveredconditionals="6" methods="10" coveredmethods="10"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="15" count="8" type="stmt"/>
+        <line num="16" count="8" type="stmt"/>
+        <line num="17" count="8" type="stmt"/>
+        <line num="18" count="8" type="stmt"/>
+        <line num="35" count="8" type="stmt"/>
+        <line num="36" count="8" type="stmt"/>
+        <line num="37" count="8" type="stmt"/>
+        <line num="38" count="8" type="stmt"/>
+        <line num="40" count="8" type="cond" truecount="2" falsecount="0"/>
+        <line num="41" count="1" type="stmt"/>
+        <line num="45" count="8" type="stmt"/>
+        <line num="46" count="8" type="stmt"/>
+        <line num="47" count="8" type="stmt"/>
+        <line num="48" count="8" type="stmt"/>
+        <line num="49" count="8" type="stmt"/>
+        <line num="50" count="8" type="stmt"/>
+        <line num="56" count="7" type="cond" truecount="2" falsecount="0"/>
+        <line num="57" count="1" type="stmt"/>
+        <line num="67" count="6" type="stmt"/>
+        <line num="70" count="36" type="stmt"/>
+        <line num="71" count="36" type="stmt"/>
+        <line num="72" count="36" type="stmt"/>
+        <line num="73" count="36" type="stmt"/>
+        <line num="82" count="4" type="stmt"/>
+        <line num="83" count="4" type="stmt"/>
+        <line num="84" count="4" type="stmt"/>
+        <line num="85" count="4" type="stmt"/>
+        <line num="94" count="16" type="stmt"/>
+        <line num="95" count="16" type="stmt"/>
+        <line num="96" count="16" type="stmt"/>
+        <line num="97" count="16" type="stmt"/>
+        <line num="102" count="1" type="stmt"/>
+        <line num="103" count="3" type="stmt"/>
+        <line num="105" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="106" count="1" type="stmt"/>
+        <line num="110" count="40" type="stmt"/>
+        <line num="125" count="2" type="stmt"/>
+        <line num="128" count="40" type="stmt"/>
+      </file>
+      <file name="theme-decoration.module.css" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\components\atoms\ThemeDecoration\theme-decoration.module.css">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="components.atoms.Toast">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="Toast.jsx" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\components\atoms\Toast\Toast.jsx">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="3" count="3" type="stmt"/>
+        <line num="4" count="10" type="stmt"/>
+      </file>
+      <file name="toast.module.css" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\components\atoms\Toast\toast.module.css">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="components.atoms.checkButton">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="CheckButton.jsx" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\components\atoms\checkButton\CheckButton.jsx">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="31" type="stmt"/>
+      </file>
+      <file name="check-button.module.css" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\components\atoms\checkButton\check-button.module.css">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="components.molecules.AchievementsList">
+      <metrics statements="3" coveredstatements="3" conditionals="6" coveredconditionals="6" methods="2" coveredmethods="2"/>
+      <file name="AchievementsList.jsx" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\components\molecules\AchievementsList\AchievementsList.jsx">
+        <metrics statements="3" coveredstatements="3" conditionals="6" coveredconditionals="6" methods="2" coveredmethods="2"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="4" count="5" type="stmt"/>
+        <line num="7" count="8" type="cond" truecount="2" falsecount="0"/>
+      </file>
+      <file name="achievements-list.module.css" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\components\molecules\AchievementsList\achievements-list.module.css">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="components.molecules.AvatarGallery">
+      <metrics statements="4" coveredstatements="4" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3"/>
+      <file name="AvatarGallery.jsx" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\components\molecules\AvatarGallery\AvatarGallery.jsx">
+        <metrics statements="4" coveredstatements="4" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3"/>
+        <line num="4" count="3" type="stmt"/>
+        <line num="5" count="5" type="stmt"/>
+        <line num="8" count="90" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+      </file>
+      <file name="avatar-gallery.module.css" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\components\molecules\AvatarGallery\avatar-gallery.module.css">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="components.molecules.Deck">
+      <metrics statements="24" coveredstatements="24" conditionals="19" coveredconditionals="17" methods="11" coveredmethods="10"/>
+      <file name="Deck.jsx" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\components\molecules\Deck\Deck.jsx">
+        <metrics statements="24" coveredstatements="24" conditionals="19" coveredconditionals="17" methods="11" coveredmethods="10"/>
+        <line num="5" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="6" count="12" type="stmt"/>
+        <line num="7" count="12" type="stmt"/>
+        <line num="9" count="12" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="17" count="12" type="cond" truecount="3" falsecount="0"/>
+        <line num="19" count="12" type="stmt"/>
+        <line num="20" count="2" type="stmt"/>
+        <line num="21" count="2" type="stmt"/>
+        <line num="22" count="2" type="stmt"/>
+        <line num="25" count="12" type="stmt"/>
+        <line num="26" count="2" type="cond" truecount="1" falsecount="1"/>
+        <line num="27" count="2" type="stmt"/>
+        <line num="28" count="2" type="stmt"/>
+        <line num="29" count="2" type="cond" truecount="1" falsecount="1"/>
+        <line num="31" count="2" type="stmt"/>
+        <line num="34" count="12" type="stmt"/>
+        <line num="53" count="24" type="stmt"/>
+        <line num="62" count="2" type="cond" truecount="3" falsecount="0"/>
+        <line num="75" count="24" type="stmt"/>
+        <line num="83" count="2" type="cond" truecount="2" falsecount="0"/>
+      </file>
+      <file name="deck.module.css" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\components\molecules\Deck\deck.module.css">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="components.molecules.DeleteButton">
+      <metrics statements="15" coveredstatements="14" conditionals="4" coveredconditionals="3" methods="7" coveredmethods="6"/>
+      <file name="DeleteButton.jsx" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\components\molecules\DeleteButton\DeleteButton.jsx">
+        <metrics statements="15" coveredstatements="14" conditionals="4" coveredconditionals="3" methods="7" coveredmethods="6"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="11" type="stmt"/>
+        <line num="9" count="11" type="stmt"/>
+        <line num="10" count="11" type="stmt"/>
+        <line num="12" count="11" type="stmt"/>
+        <line num="13" count="2" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="17" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="20" count="1" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="25" count="11" type="stmt"/>
+        <line num="27" count="4" type="stmt"/>
+        <line num="32" count="0" type="stmt"/>
+        <line num="36" count="1" type="stmt"/>
+      </file>
+      <file name="delete-button.module.css" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\components\molecules\DeleteButton\delete-button.module.css">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="components.molecules.DropButton">
+      <metrics statements="16" coveredstatements="15" conditionals="4" coveredconditionals="3" methods="5" coveredmethods="4"/>
+      <file name="DropButton.jsx" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\components\molecules\DropButton\DropButton.jsx">
+        <metrics statements="16" coveredstatements="15" conditionals="4" coveredconditionals="3" methods="5" coveredmethods="4"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="11" type="stmt"/>
+        <line num="9" count="11" type="stmt"/>
+        <line num="10" count="11" type="stmt"/>
+        <line num="12" count="11" type="stmt"/>
+        <line num="13" count="2" type="stmt"/>
+        <line num="14" count="2" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="17" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+        <line num="24" count="11" type="stmt"/>
+        <line num="26" count="4" type="stmt"/>
+        <line num="31" count="0" type="stmt"/>
+        <line num="35" count="1" type="stmt"/>
+      </file>
+      <file name="drop-button.module.css" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\components\molecules\DropButton\drop-button.module.css">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="components.molecules.InterpretationModalBackground">
+      <metrics statements="12" coveredstatements="12" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="5"/>
+      <file name="InterpretationModalBackground.jsx" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\components\molecules\InterpretationModalBackground\InterpretationModalBackground.jsx">
+        <metrics statements="12" coveredstatements="12" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="5"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="6" type="stmt"/>
+        <line num="10" count="36" type="stmt"/>
+        <line num="11" count="36" type="stmt"/>
+        <line num="12" count="36" type="stmt"/>
+        <line num="13" count="36" type="stmt"/>
+        <line num="24" count="24" type="stmt"/>
+        <line num="26" count="120" type="stmt"/>
+        <line num="27" count="120" type="stmt"/>
+        <line num="28" count="120" type="stmt"/>
+        <line num="29" count="120" type="stmt"/>
+        <line num="48" count="36" type="stmt"/>
+      </file>
+      <file name="interpretation-modal-background.module.css" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\components\molecules\InterpretationModalBackground\interpretation-modal-background.module.css">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="components.molecules.Modal">
+      <metrics statements="8" coveredstatements="8" conditionals="6" coveredconditionals="6" methods="5" coveredmethods="5"/>
+      <file name="Modal.jsx" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\components\molecules\Modal\Modal.jsx">
+        <metrics statements="8" coveredstatements="8" conditionals="6" coveredconditionals="6" methods="5" coveredmethods="5"/>
+        <line num="4" count="5" type="stmt"/>
+        <line num="5" count="58" type="stmt"/>
+        <line num="6" count="58" type="stmt"/>
+        <line num="7" count="37" type="cond" truecount="2" falsecount="0"/>
+        <line num="9" count="58" type="stmt"/>
+        <line num="10" count="58" type="stmt"/>
+        <line num="13" count="58" type="stmt"/>
+        <line num="15" count="15" type="stmt"/>
+      </file>
+      <file name="modal.module.css" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\components\molecules\Modal\modal.module.css">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="components.molecules.MusicPlayer">
+      <metrics statements="11" coveredstatements="11" conditionals="18" coveredconditionals="17" methods="9" coveredmethods="9"/>
+      <file name="MusicPlayer.jsx" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\components\molecules\MusicPlayer\MusicPlayer.jsx">
+        <metrics statements="11" coveredstatements="11" conditionals="18" coveredconditionals="17" methods="9" coveredmethods="9"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="12" count="16" type="stmt"/>
+        <line num="14" count="16" type="stmt"/>
+        <line num="16" count="16" type="stmt"/>
+        <line num="18" count="7" type="stmt"/>
+        <line num="29" count="1" type="stmt"/>
+        <line num="35" count="1" type="stmt"/>
+        <line num="41" count="1" type="stmt"/>
+        <line num="51" count="1" type="stmt"/>
+        <line num="54" count="2" type="stmt"/>
+        <line num="77" count="1" type="stmt"/>
+      </file>
+      <file name="music-player.module.css" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\components\molecules\MusicPlayer\music-player.module.css">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="components.molecules.ProgressBar">
+      <metrics statements="4" coveredstatements="4" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+      <file name="ProgressBar.jsx" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\components\molecules\ProgressBar\ProgressBar.jsx">
+        <metrics statements="4" coveredstatements="4" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="4" count="95" type="stmt"/>
+        <line num="5" count="95" type="cond" truecount="2" falsecount="0"/>
+        <line num="7" count="95" type="stmt"/>
+      </file>
+      <file name="progress-bar.module.css" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\components\molecules\ProgressBar\progress-bar.module.css">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="components.molecules.ReadingCard">
+      <metrics statements="16" coveredstatements="16" conditionals="2" coveredconditionals="2" methods="7" coveredmethods="7"/>
+      <file name="ReadingCard.jsx" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\components\molecules\ReadingCard\ReadingCard.jsx">
+        <metrics statements="16" coveredstatements="16" conditionals="2" coveredconditionals="2" methods="7" coveredmethods="7"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="31" type="stmt"/>
+        <line num="11" count="31" type="stmt"/>
+        <line num="13" count="31" type="stmt"/>
+        <line num="14" count="31" type="stmt"/>
+        <line num="20" count="31" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="32" count="31" type="stmt"/>
+        <line num="34" count="31" type="stmt"/>
+        <line num="35" count="2" type="stmt"/>
+        <line num="36" count="1" type="stmt"/>
+        <line num="39" count="1" type="stmt"/>
+        <line num="40" count="1" type="stmt"/>
+        <line num="44" count="31" type="stmt"/>
+        <line num="57" count="20" type="stmt"/>
+        <line num="64" count="3" type="stmt"/>
+      </file>
+      <file name="reading-card.module.css" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\components\molecules\ReadingCard\reading-card.module.css">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="components.molecules.ToastContainer">
+      <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+      <file name="ToastContainer.jsx" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\components\molecules\ToastContainer\ToastContainer.jsx">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="5" count="11" type="stmt"/>
+        <line num="8" count="6" type="stmt"/>
+      </file>
+      <file name="toast-container.module.css" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\components\molecules\ToastContainer\toast-container.module.css">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="components.molecules.UserMenu">
+      <metrics statements="22" coveredstatements="22" conditionals="8" coveredconditionals="8" methods="12" coveredmethods="11"/>
+      <file name="UserMenu.jsx" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\components\molecules\UserMenu\UserMenu.jsx">
+        <metrics statements="22" coveredstatements="22" conditionals="8" coveredconditionals="8" methods="12" coveredmethods="11"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="20" type="stmt"/>
+        <line num="7" count="20" type="stmt"/>
+        <line num="8" count="20" type="stmt"/>
+        <line num="9" count="20" type="stmt"/>
+        <line num="11" count="20" type="stmt"/>
+        <line num="12" count="8" type="stmt"/>
+        <line num="13" count="12" type="cond" truecount="4" falsecount="0"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="17" count="8" type="stmt"/>
+        <line num="18" count="8" type="stmt"/>
+        <line num="21" count="20" type="stmt"/>
+        <line num="22" count="3" type="stmt"/>
+        <line num="23" count="3" type="stmt"/>
+        <line num="26" count="20" type="stmt"/>
+        <line num="27" count="1" type="stmt"/>
+        <line num="28" count="1" type="stmt"/>
+        <line num="31" count="20" type="stmt"/>
+        <line num="37" count="7" type="stmt"/>
+        <line num="51" count="1" type="stmt"/>
+        <line num="54" count="1" type="stmt"/>
+        <line num="57" count="1" type="stmt"/>
+      </file>
+      <file name="user-menu.module.css" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\components\molecules\UserMenu\user-menu.module.css">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="components.organisms.BoardCards">
+      <metrics statements="51" coveredstatements="50" conditionals="40" coveredconditionals="36" methods="12" coveredmethods="12"/>
+      <file name="BoardCards.jsx" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\components\organisms\BoardCards\BoardCards.jsx">
+        <metrics statements="51" coveredstatements="50" conditionals="40" coveredconditionals="36" methods="12" coveredmethods="12"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="33" type="stmt"/>
+        <line num="13" count="33" type="stmt"/>
+        <line num="14" count="33" type="stmt"/>
+        <line num="15" count="33" type="stmt"/>
+        <line num="21" count="33" type="cond" truecount="3" falsecount="0"/>
+        <line num="22" count="33" type="stmt"/>
+        <line num="23" count="33" type="stmt"/>
+        <line num="25" count="33" type="stmt"/>
+        <line num="26" count="9" type="stmt"/>
+        <line num="27" count="9" type="stmt"/>
+        <line num="28" count="9" type="stmt"/>
+        <line num="29" count="8" type="stmt"/>
+        <line num="31" count="33" type="stmt"/>
+        <line num="32" count="33" type="stmt"/>
+        <line num="35" count="8" type="stmt"/>
+        <line num="36" count="8" type="stmt"/>
+        <line num="38" count="1" type="stmt"/>
+        <line num="41" count="9" type="stmt"/>
+        <line num="44" count="33" type="stmt"/>
+        <line num="45" count="13" type="stmt"/>
+        <line num="46" count="13" type="cond" truecount="1" falsecount="1"/>
+        <line num="47" count="13" type="cond" truecount="4" falsecount="1"/>
+        <line num="49" count="13" type="stmt"/>
+        <line num="50" count="13" type="cond" truecount="2" falsecount="0"/>
+        <line num="51" count="8" type="cond" truecount="2" falsecount="0"/>
+        <line num="52" count="4" type="cond" truecount="1" falsecount="1"/>
+        <line num="53" count="0" type="stmt"/>
+        <line num="56" count="40" type="stmt"/>
+        <line num="59" count="33" type="stmt"/>
+        <line num="60" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="61" count="2" type="stmt"/>
+        <line num="63" count="1" type="stmt"/>
+        <line num="76" count="33" type="stmt"/>
+        <line num="77" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="78" count="5" type="stmt"/>
+        <line num="81" count="33" type="stmt"/>
+        <line num="82" count="3" type="stmt"/>
+        <line num="83" count="3" type="stmt"/>
+        <line num="84" count="3" type="stmt"/>
+        <line num="85" count="3" type="stmt"/>
+        <line num="86" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="87" count="1" type="stmt"/>
+        <line num="88" count="1" type="stmt"/>
+        <line num="90" count="1" type="stmt"/>
+        <line num="91" count="1" type="stmt"/>
+        <line num="92" count="1" type="stmt"/>
+        <line num="93" count="1" type="stmt"/>
+        <line num="95" count="1" type="stmt"/>
+        <line num="100" count="33" type="stmt"/>
+      </file>
+      <file name="board-card.module.css" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\components\organisms\BoardCards\board-card.module.css">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="components.organisms.DataForm">
+      <metrics statements="4" coveredstatements="4" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+      <file name="DataForm.jsx" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\components\organisms\DataForm\DataForm.jsx">
+        <metrics statements="4" coveredstatements="4" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="3" type="stmt"/>
+        <line num="8" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="9" count="3" type="stmt"/>
+      </file>
+      <file name="data-form.module.css" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\components\organisms\DataForm\data-form.module.css">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="components.organisms.DeckSelect">
+      <metrics statements="18" coveredstatements="17" conditionals="6" coveredconditionals="6" methods="8" coveredmethods="7"/>
+      <file name="DeckSelect.jsx" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\components\organisms\DeckSelect\DeckSelect.jsx">
+        <metrics statements="18" coveredstatements="17" conditionals="6" coveredconditionals="6" methods="8" coveredmethods="7"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="5" type="stmt"/>
+        <line num="11" count="5" type="stmt"/>
+        <line num="12" count="5" type="stmt"/>
+        <line num="14" count="5" type="stmt"/>
+        <line num="15" count="2" type="stmt"/>
+        <line num="18" count="5" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="22" count="5" type="stmt"/>
+        <line num="23" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="24" count="2" type="stmt"/>
+        <line num="27" count="5" type="stmt"/>
+        <line num="34" count="1" type="stmt"/>
+        <line num="36" count="1" type="stmt"/>
+        <line num="45" count="1" type="stmt"/>
+        <line num="47" count="1" type="stmt"/>
+      </file>
+      <file name="deck-select.module.css" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\components\organisms\DeckSelect\deck-select.module.css">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="components.organisms.Header">
+      <metrics statements="14" coveredstatements="14" conditionals="6" coveredconditionals="6" methods="4" coveredmethods="3"/>
+      <file name="Header.jsx" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\components\organisms\Header\Header.jsx">
+        <metrics statements="14" coveredstatements="14" conditionals="6" coveredconditionals="6" methods="4" coveredmethods="3"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="7" type="stmt"/>
+        <line num="12" count="7" type="stmt"/>
+        <line num="13" count="7" type="stmt"/>
+        <line num="14" count="7" type="stmt"/>
+        <line num="16" count="7" type="stmt"/>
+        <line num="17" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+        <line num="24" count="7" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
+        <line num="26" count="1" type="stmt"/>
+        <line num="27" count="1" type="stmt"/>
+        <line num="30" count="7" type="stmt"/>
+      </file>
+      <file name="header.module.css" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\components\organisms\Header\header.module.css">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="components.organisms.HistoryCards">
+      <metrics statements="27" coveredstatements="26" conditionals="16" coveredconditionals="15" methods="13" coveredmethods="12"/>
+      <file name="HistoryCards.jsx" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\components\organisms\HistoryCards\HistoryCards.jsx">
+        <metrics statements="27" coveredstatements="26" conditionals="16" coveredconditionals="15" methods="13" coveredmethods="12"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="23" type="stmt"/>
+        <line num="12" count="23" type="stmt"/>
+        <line num="13" count="23" type="stmt"/>
+        <line num="14" count="23" type="stmt"/>
+        <line num="16" count="23" type="stmt"/>
+        <line num="18" count="23" type="stmt"/>
+        <line num="19" count="10" type="stmt"/>
+        <line num="20" count="10" type="stmt"/>
+        <line num="24" count="23" type="stmt"/>
+        <line num="25" count="23" type="stmt"/>
+        <line num="26" count="23" type="stmt"/>
+        <line num="28" count="23" type="stmt"/>
+        <line num="29" count="3" type="cond" truecount="3" falsecount="1"/>
+        <line num="30" count="3" type="stmt"/>
+        <line num="31" count="3" type="stmt"/>
+        <line num="34" count="23" type="stmt"/>
+        <line num="35" count="2" type="stmt"/>
+        <line num="36" count="2" type="cond" truecount="4" falsecount="0"/>
+        <line num="37" count="1" type="stmt"/>
+        <line num="41" count="23" type="stmt"/>
+        <line num="47" count="110" type="stmt"/>
+        <line num="59" count="0" type="stmt"/>
+        <line num="66" count="14" type="stmt"/>
+        <line num="69" count="2" type="stmt"/>
+        <line num="77" count="1" type="stmt"/>
+      </file>
+      <file name="history-cards.module.css" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\components\organisms\HistoryCards\history-cards.module.css">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="components.organisms.LoadingScreen">
+      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="LoadingScreen.css" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\components\organisms\LoadingScreen\LoadingScreen.css">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="LoadingScreen.jsx" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\components\organisms\LoadingScreen\LoadingScreen.jsx">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="10" count="4" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.organisms.LoginForm">
+      <metrics statements="21" coveredstatements="21" conditionals="8" coveredconditionals="7" methods="3" coveredmethods="3"/>
+      <file name="LogForm.jsx" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\components\organisms\LoginForm\LogForm.jsx">
+        <metrics statements="21" coveredstatements="21" conditionals="8" coveredconditionals="7" methods="3" coveredmethods="3"/>
+        <line num="13" count="67" type="stmt"/>
+        <line num="14" count="67" type="stmt"/>
+        <line num="15" count="67" type="stmt"/>
+        <line num="16" count="67" type="stmt"/>
+        <line num="17" count="67" type="stmt"/>
+        <line num="19" count="67" type="stmt"/>
+        <line num="20" count="62" type="stmt"/>
+        <line num="21" count="62" type="stmt"/>
+        <line num="27" count="67" type="stmt"/>
+        <line num="28" count="4" type="stmt"/>
+        <line num="29" count="4" type="cond" truecount="4" falsecount="0"/>
+        <line num="30" count="1" type="stmt"/>
+        <line num="31" count="1" type="stmt"/>
+        <line num="33" count="3" type="stmt"/>
+        <line num="34" count="3" type="stmt"/>
+        <line num="38" count="1" type="stmt"/>
+        <line num="39" count="1" type="stmt"/>
+        <line num="40" count="1" type="stmt"/>
+        <line num="43" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="46" count="2" type="stmt"/>
+        <line num="50" count="67" type="stmt"/>
+      </file>
+      <file name="log-form.module.css" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\components\organisms\LoginForm\log-form.module.css">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="components.organisms.RegisterForm">
+      <metrics statements="49" coveredstatements="43" conditionals="39" coveredconditionals="30" methods="13" coveredmethods="7"/>
+      <file name="RegForm.jsx" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\components\organisms\RegisterForm\RegForm.jsx">
+        <metrics statements="49" coveredstatements="43" conditionals="39" coveredconditionals="30" methods="13" coveredmethods="7"/>
+        <line num="13" count="153" type="stmt"/>
+        <line num="19" count="153" type="stmt"/>
+        <line num="20" count="153" type="stmt"/>
+        <line num="21" count="153" type="stmt"/>
+        <line num="22" count="153" type="stmt"/>
+        <line num="23" count="153" type="stmt"/>
+        <line num="24" count="153" type="stmt"/>
+        <line num="25" count="153" type="stmt"/>
+        <line num="26" count="153" type="stmt"/>
+        <line num="32" count="153" type="stmt"/>
+        <line num="33" count="143" type="stmt"/>
+        <line num="34" count="143" type="stmt"/>
+        <line num="40" count="153" type="stmt"/>
+        <line num="41" count="0" type="stmt"/>
+        <line num="44" count="153" type="stmt"/>
+        <line num="45" count="5" type="stmt"/>
+        <line num="46" count="5" type="cond" truecount="5" falsecount="0"/>
+        <line num="47" count="1" type="stmt"/>
+        <line num="48" count="1" type="stmt"/>
+        <line num="51" count="4" type="stmt"/>
+        <line num="56" count="4" type="stmt"/>
+        <line num="58" count="11" type="cond" truecount="2" falsecount="0"/>
+        <line num="59" count="2" type="stmt"/>
+        <line num="60" count="2" type="stmt"/>
+        <line num="63" count="2" type="stmt"/>
+        <line num="64" count="2" type="stmt"/>
+        <line num="65" count="1" type="stmt"/>
+        <line num="66" count="1" type="stmt"/>
+        <line num="68" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="72" count="153" type="stmt"/>
+        <line num="73" count="4" type="cond" truecount="1" falsecount="1"/>
+        <line num="74" count="4" type="cond" truecount="1" falsecount="1"/>
+        <line num="75" count="4" type="cond" truecount="1" falsecount="1"/>
+        <line num="76" count="4" type="stmt"/>
+        <line num="78" count="153" type="stmt"/>
+        <line num="79" count="4" type="cond" truecount="1" falsecount="1"/>
+        <line num="80" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="81" count="3" type="stmt"/>
+        <line num="83" count="153" type="stmt"/>
+        <line num="84" count="4" type="cond" truecount="1" falsecount="1"/>
+        <line num="85" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="86" count="3" type="cond" truecount="1" falsecount="1"/>
+        <line num="87" count="3" type="stmt"/>
+        <line num="90" count="153" type="stmt"/>
+        <line num="161" count="0" type="stmt"/>
+        <line num="186" count="0" type="stmt"/>
+        <line num="190" count="0" type="stmt"/>
+        <line num="199" count="0" type="stmt"/>
+        <line num="200" count="0" type="stmt"/>
+      </file>
+      <file name="reg-form.module.css" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\components\organisms\RegisterForm\reg-form.module.css">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="components.organisms.SavedReading">
+      <metrics statements="53" coveredstatements="50" conditionals="25" coveredconditionals="23" methods="18" coveredmethods="16"/>
+      <file name="SavedReading.jsx" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\components\organisms\SavedReading\SavedReading.jsx">
+        <metrics statements="53" coveredstatements="50" conditionals="25" coveredconditionals="23" methods="18" coveredmethods="16"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="15" count="23" type="stmt"/>
+        <line num="16" count="23" type="stmt"/>
+        <line num="17" count="23" type="stmt"/>
+        <line num="18" count="23" type="stmt"/>
+        <line num="19" count="23" type="stmt"/>
+        <line num="20" count="23" type="stmt"/>
+        <line num="21" count="23" type="stmt"/>
+        <line num="22" count="23" type="stmt"/>
+        <line num="23" count="23" type="stmt"/>
+        <line num="25" count="23" type="stmt"/>
+        <line num="26" count="23" type="stmt"/>
+        <line num="28" count="23" type="stmt"/>
+        <line num="29" count="8" type="stmt"/>
+        <line num="30" count="8" type="stmt"/>
+        <line num="33" count="8" type="stmt"/>
+        <line num="34" count="8" type="stmt"/>
+        <line num="36" count="8" type="stmt"/>
+        <line num="37" count="8" type="stmt"/>
+        <line num="41" count="23" type="stmt"/>
+        <line num="42" count="8" type="cond" truecount="2" falsecount="0"/>
+        <line num="44" count="7" type="stmt"/>
+        <line num="45" count="7" type="stmt"/>
+        <line num="46" count="7" type="stmt"/>
+        <line num="47" count="6" type="stmt"/>
+        <line num="48" count="6" type="stmt"/>
+        <line num="50" count="6" type="stmt"/>
+        <line num="56" count="6" type="stmt"/>
+        <line num="57" count="6" type="stmt"/>
+        <line num="59" count="0" type="stmt"/>
+        <line num="62" count="7" type="stmt"/>
+        <line num="65" count="23" type="cond" truecount="4" falsecount="0"/>
+        <line num="66" count="9" type="stmt"/>
+        <line num="70" count="14" type="cond" truecount="3" falsecount="0"/>
+        <line num="72" count="23" type="stmt"/>
+        <line num="73" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="76" count="23" type="stmt"/>
+        <line num="77" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="80" count="23" type="stmt"/>
+        <line num="81" count="2" type="stmt"/>
+        <line num="82" count="2" type="stmt"/>
+        <line num="83" count="1" type="stmt"/>
+        <line num="84" count="1" type="stmt"/>
+        <line num="86" count="1" type="stmt"/>
+        <line num="87" count="1" type="stmt"/>
+        <line num="91" count="23" type="stmt"/>
+        <line num="95" count="42" type="stmt"/>
+        <line num="149" count="1" type="stmt"/>
+        <line num="161" count="3" type="stmt"/>
+        <line num="171" count="0" type="stmt"/>
+        <line num="176" count="1" type="stmt"/>
+        <line num="191" count="0" type="stmt"/>
+        <line num="199" count="1" type="stmt"/>
+      </file>
+      <file name="saved-reading.module.css" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\components\organisms\SavedReading\saved-reading.module.css">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="components.organisms.TarotDeck">
+      <metrics statements="59" coveredstatements="56" conditionals="34" coveredconditionals="30" methods="20" coveredmethods="16"/>
+      <file name="TarotDeck.jsx" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\components\organisms\TarotDeck\TarotDeck.jsx">
+        <metrics statements="59" coveredstatements="56" conditionals="34" coveredconditionals="30" methods="20" coveredmethods="16"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="16" count="63" type="stmt"/>
+        <line num="17" count="63" type="stmt"/>
+        <line num="18" count="63" type="stmt"/>
+        <line num="19" count="63" type="stmt"/>
+        <line num="20" count="63" type="stmt"/>
+        <line num="21" count="63" type="stmt"/>
+        <line num="22" count="63" type="stmt"/>
+        <line num="23" count="63" type="stmt"/>
+        <line num="24" count="63" type="stmt"/>
+        <line num="27" count="63" type="stmt"/>
+        <line num="28" count="63" type="cond" truecount="2" falsecount="0"/>
+        <line num="29" count="63" type="stmt"/>
+        <line num="30" count="63" type="stmt"/>
+        <line num="32" count="63" type="stmt"/>
+        <line num="34" count="63" type="stmt"/>
+        <line num="35" count="10" type="stmt"/>
+        <line num="36" count="10" type="stmt"/>
+        <line num="39" count="10" type="stmt"/>
+        <line num="40" count="10" type="stmt"/>
+        <line num="42" count="10" type="stmt"/>
+        <line num="43" count="10" type="stmt"/>
+        <line num="47" count="63" type="stmt"/>
+        <line num="48" count="10" type="cond" truecount="5" falsecount="0"/>
+        <line num="50" count="9" type="stmt"/>
+        <line num="51" count="9" type="stmt"/>
+        <line num="52" count="9" type="cond" truecount="1" falsecount="1"/>
+        <line num="53" count="8" type="stmt"/>
+        <line num="55" count="1" type="stmt"/>
+        <line num="59" count="9" type="stmt"/>
+        <line num="62" count="63" type="cond" truecount="2" falsecount="0"/>
+        <line num="63" count="1" type="stmt"/>
+        <line num="66" count="62" type="stmt"/>
+        <line num="73" count="62" type="cond" truecount="3" falsecount="0"/>
+        <line num="75" count="63" type="stmt"/>
+        <line num="76" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="79" count="63" type="stmt"/>
+        <line num="80" count="2" type="cond" truecount="1" falsecount="1"/>
+        <line num="83" count="63" type="stmt"/>
+        <line num="84" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="85" count="1" type="stmt"/>
+        <line num="86" count="1" type="stmt"/>
+        <line num="89" count="2" type="stmt"/>
+        <line num="101" count="3" type="stmt"/>
+        <line num="102" count="3" type="stmt"/>
+        <line num="103" count="1" type="stmt"/>
+        <line num="104" count="1" type="stmt"/>
+        <line num="105" count="1" type="stmt"/>
+        <line num="106" count="1" type="stmt"/>
+        <line num="108" count="1" type="stmt"/>
+        <line num="109" count="1" type="stmt"/>
+        <line num="113" count="63" type="stmt"/>
+        <line num="203" count="2" type="stmt"/>
+        <line num="217" count="4" type="stmt"/>
+        <line num="232" count="0" type="stmt"/>
+        <line num="237" count="1" type="stmt"/>
+        <line num="250" count="0" type="stmt"/>
+        <line num="257" count="1" type="stmt"/>
+        <line num="269" count="25" type="stmt"/>
+      </file>
+      <file name="tarot-deck.module.css" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\components\organisms\TarotDeck\tarot-deck.module.css">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="constants">
+      <metrics statements="5" coveredstatements="5" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
+      <file name="avatars.js" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\constants\avatars.js">
+        <metrics statements="3" coveredstatements="3" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
+        <line num="20" count="3" type="stmt"/>
+        <line num="41" count="3" type="stmt"/>
+        <line num="43" count="103" type="cond" truecount="1" falsecount="1"/>
+      </file>
+      <file name="soundtrack.js" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\constants\soundtrack.js">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="27" count="1" type="stmt"/>
+        <line num="56" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="context.audio">
+      <metrics statements="59" coveredstatements="50" conditionals="26" coveredconditionals="18" methods="23" coveredmethods="16"/>
+      <file name="AudioContext.jsx" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\context\audio\AudioContext.jsx">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="3" count="2" type="stmt"/>
+      </file>
+      <file name="AudioProvider.jsx" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\context\audio\AudioProvider.jsx">
+        <metrics statements="58" coveredstatements="49" conditionals="26" coveredconditionals="18" methods="23" coveredmethods="16"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="14" type="cond" truecount="2" falsecount="0"/>
+        <line num="13" count="14" type="stmt"/>
+        <line num="14" count="7" type="cond" truecount="2" falsecount="0"/>
+        <line num="16" count="14" type="stmt"/>
+        <line num="17" count="14" type="stmt"/>
+        <line num="18" count="7" type="stmt"/>
+        <line num="19" count="7" type="cond" truecount="2" falsecount="0"/>
+        <line num="21" count="14" type="stmt"/>
+        <line num="23" count="14" type="stmt"/>
+        <line num="25" count="14" type="stmt"/>
+        <line num="26" count="12" type="stmt"/>
+        <line num="29" count="14" type="stmt"/>
+        <line num="30" count="8" type="stmt"/>
+        <line num="33" count="14" type="stmt"/>
+        <line num="34" count="8" type="stmt"/>
+        <line num="35" count="8" type="stmt"/>
+        <line num="38" count="14" type="stmt"/>
+        <line num="39" count="12" type="cond" truecount="2" falsecount="0"/>
+        <line num="40" count="5" type="stmt"/>
+        <line num="42" count="9" type="cond" truecount="2" falsecount="0"/>
+        <line num="43" count="2" type="stmt"/>
+        <line num="45" count="7" type="stmt"/>
+        <line num="48" count="14" type="stmt"/>
+        <line num="49" count="12" type="stmt"/>
+        <line num="51" count="12" type="stmt"/>
+        <line num="52" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="53" count="0" type="stmt"/>
+        <line num="54" count="0" type="stmt"/>
+        <line num="55" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="56" count="0" type="stmt"/>
+        <line num="60" count="12" type="stmt"/>
+        <line num="61" count="12" type="stmt"/>
+        <line num="64" count="14" type="stmt"/>
+        <line num="65" count="12" type="stmt"/>
+        <line num="66" count="12" type="stmt"/>
+        <line num="68" count="12" type="cond" truecount="4" falsecount="0"/>
+        <line num="69" count="7" type="stmt"/>
+        <line num="70" count="7" type="stmt"/>
+        <line num="71" count="7" type="stmt"/>
+        <line num="74" count="5" type="cond" truecount="1" falsecount="1"/>
+        <line num="75" count="5" type="stmt"/>
+        <line num="77" count="5" type="stmt"/>
+        <line num="78" count="5" type="stmt"/>
+        <line num="81" count="14" type="stmt"/>
+        <line num="82" count="0" type="stmt"/>
+        <line num="85" count="14" type="stmt"/>
+        <line num="86" count="0" type="stmt"/>
+        <line num="87" count="0" type="stmt"/>
+        <line num="90" count="14" type="stmt"/>
+        <line num="91" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="92" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="95" count="14" type="stmt"/>
+        <line num="96" count="5" type="stmt"/>
+        <line num="97" count="5" type="stmt"/>
+        <line num="100" count="14" type="stmt"/>
+        <line num="117" count="14" type="stmt"/>
+      </file>
+    </package>
+    <package name="context.auth">
+      <metrics statements="19" coveredstatements="19" conditionals="2" coveredconditionals="2" methods="6" coveredmethods="6"/>
+      <file name="AuthContext.jsx" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\context\auth\AuthContext.jsx">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="3" count="3" type="stmt"/>
+      </file>
+      <file name="AuthProvider.jsx" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\context\auth\AuthProvider.jsx">
+        <metrics statements="18" coveredstatements="18" conditionals="2" coveredconditionals="2" methods="6" coveredmethods="6"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="6" count="21" type="stmt"/>
+        <line num="7" count="11" type="stmt"/>
+        <line num="8" count="11" type="cond" truecount="2" falsecount="0"/>
+        <line num="11" count="21" type="stmt"/>
+        <line num="12" count="5" type="stmt"/>
+        <line num="13" count="5" type="stmt"/>
+        <line num="14" count="5" type="stmt"/>
+        <line num="17" count="21" type="stmt"/>
+        <line num="18" count="3" type="stmt"/>
+        <line num="19" count="3" type="stmt"/>
+        <line num="20" count="3" type="stmt"/>
+        <line num="21" count="3" type="stmt"/>
+        <line num="25" count="21" type="stmt"/>
+        <line num="26" count="2" type="stmt"/>
+        <line num="27" count="2" type="stmt"/>
+        <line num="28" count="2" type="stmt"/>
+        <line num="31" count="21" type="stmt"/>
+      </file>
+    </package>
+    <package name="context.theme">
+      <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <file name="ThemeContext.jsx" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\context\theme\ThemeContext.jsx">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="3" count="3" type="stmt"/>
+      </file>
+      <file name="ThemeProvider.jsx" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\context\theme\ThemeProvider.jsx">
+        <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="5" count="13" type="stmt"/>
+        <line num="7" count="13" type="stmt"/>
+        <line num="8" count="13" type="stmt"/>
+        <line num="11" count="13" type="stmt"/>
+      </file>
+    </package>
+    <package name="context.toast">
+      <metrics statements="14" coveredstatements="14" conditionals="2" coveredconditionals="2" methods="10" coveredmethods="10"/>
+      <file name="ToastContext.jsx" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\context\toast\ToastContext.jsx">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="3" count="7" type="stmt"/>
+      </file>
+      <file name="ToastProvider.jsx" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\context\toast\ToastProvider.jsx">
+        <metrics statements="13" coveredstatements="13" conditionals="2" coveredconditionals="2" methods="10" coveredmethods="10"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="6" count="17" type="stmt"/>
+        <line num="8" count="17" type="stmt"/>
+        <line num="9" count="6" type="stmt"/>
+        <line num="12" count="17" type="cond" truecount="2" falsecount="0"/>
+        <line num="13" count="7" type="stmt"/>
+        <line num="14" count="7" type="stmt"/>
+        <line num="15" count="7" type="stmt"/>
+        <line num="18" count="17" type="stmt"/>
+        <line num="19" count="3" type="stmt"/>
+        <line num="20" count="2" type="stmt"/>
+        <line num="21" count="2" type="stmt"/>
+        <line num="24" count="17" type="stmt"/>
+      </file>
+    </package>
+    <package name="hooks">
+      <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="3"/>
+      <file name="useAudioPlayer.js" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\hooks\useAudioPlayer.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="4" count="1" type="stmt"/>
+      </file>
+      <file name="useAuth.jsx" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\hooks\useAuth.jsx">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="6" count="13" type="stmt"/>
+      </file>
+      <file name="useTheme.js" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\hooks\useTheme.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="4" count="7" type="stmt"/>
+      </file>
+      <file name="useToast.js" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\hooks\useToast.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="4" count="8" type="stmt"/>
+      </file>
+    </package>
+    <package name="pages.AskQuestion">
+      <metrics statements="18" coveredstatements="18" conditionals="4" coveredconditionals="4" methods="4" coveredmethods="4"/>
+      <file name="AskQuestion.jsx" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\pages\AskQuestion\AskQuestion.jsx">
+        <metrics statements="18" coveredstatements="18" conditionals="4" coveredconditionals="4" methods="4" coveredmethods="4"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="54" type="stmt"/>
+        <line num="8" count="54" type="stmt"/>
+        <line num="9" count="54" type="stmt"/>
+        <line num="10" count="54" type="stmt"/>
+        <line num="12" count="54" type="stmt"/>
+        <line num="14" count="54" type="cond" truecount="2" falsecount="0"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="19" count="53" type="stmt"/>
+        <line num="20" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
+        <line num="24" count="2" type="stmt"/>
+        <line num="27" count="53" type="stmt"/>
+        <line num="28" count="1" type="stmt"/>
+        <line num="31" count="53" type="stmt"/>
+        <line num="40" count="48" type="stmt"/>
+      </file>
+      <file name="ask-question.module.css" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\pages\AskQuestion\ask-question.module.css">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="pages.ConfirmDeleteAccount">
+      <metrics statements="22" coveredstatements="22" conditionals="12" coveredconditionals="12" methods="5" coveredmethods="5"/>
+      <file name="ConfirmDeleteAccount.jsx" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\pages\ConfirmDeleteAccount\ConfirmDeleteAccount.jsx">
+        <metrics statements="22" coveredstatements="22" conditionals="12" coveredconditionals="12" methods="5" coveredmethods="5"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="12" type="stmt"/>
+        <line num="10" count="12" type="stmt"/>
+        <line num="11" count="12" type="stmt"/>
+        <line num="12" count="12" type="stmt"/>
+        <line num="13" count="12" type="stmt"/>
+        <line num="15" count="12" type="stmt"/>
+        <line num="17" count="12" type="stmt"/>
+        <line num="18" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+        <line num="22" count="3" type="stmt"/>
+        <line num="23" count="3" type="stmt"/>
+        <line num="24" count="3" type="stmt"/>
+        <line num="26" count="1" type="stmt"/>
+        <line num="27" count="1" type="stmt"/>
+        <line num="28" count="1" type="stmt"/>
+        <line num="29" count="1" type="stmt"/>
+        <line num="32" count="2" type="stmt"/>
+        <line num="33" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="36" count="2" type="stmt"/>
+        <line num="40" count="12" type="stmt"/>
+      </file>
+      <file name="confirm-delete-account.module.css" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\pages\ConfirmDeleteAccount\confirm-delete-account.module.css">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="pages.DataResults">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="DataResults.jsx" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\pages\DataResults\DataResults.jsx">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="7" count="2" type="stmt"/>
+      </file>
+      <file name="data-results.module.css" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\pages\DataResults\data-results.module.css">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="pages.ForgotPassword">
+      <metrics statements="42" coveredstatements="37" conditionals="12" coveredconditionals="9" methods="7" coveredmethods="7"/>
+      <file name="ForgotPassword.jsx" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\pages\ForgotPassword\ForgotPassword.jsx">
+        <metrics statements="42" coveredstatements="37" conditionals="12" coveredconditionals="9" methods="7" coveredmethods="7"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="175" type="stmt"/>
+        <line num="9" count="175" type="stmt"/>
+        <line num="11" count="175" type="stmt"/>
+        <line num="12" count="175" type="stmt"/>
+        <line num="13" count="175" type="stmt"/>
+        <line num="14" count="175" type="stmt"/>
+        <line num="15" count="175" type="stmt"/>
+        <line num="17" count="175" type="stmt"/>
+        <line num="18" count="5" type="stmt"/>
+        <line num="19" count="5" type="cond" truecount="2" falsecount="0"/>
+        <line num="20" count="1" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="23" count="4" type="stmt"/>
+        <line num="24" count="4" type="stmt"/>
+        <line num="25" count="4" type="stmt"/>
+        <line num="26" count="4" type="stmt"/>
+        <line num="27" count="4" type="stmt"/>
+        <line num="29" count="0" type="stmt"/>
+        <line num="33" count="175" type="stmt"/>
+        <line num="34" count="3" type="stmt"/>
+        <line num="35" count="3" type="cond" truecount="1" falsecount="1"/>
+        <line num="36" count="0" type="stmt"/>
+        <line num="37" count="0" type="stmt"/>
+        <line num="39" count="3" type="cond" truecount="1" falsecount="1"/>
+        <line num="40" count="0" type="stmt"/>
+        <line num="41" count="0" type="stmt"/>
+        <line num="43" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="44" count="1" type="stmt"/>
+        <line num="45" count="1" type="stmt"/>
+        <line num="47" count="2" type="stmt"/>
+        <line num="48" count="2" type="stmt"/>
+        <line num="49" count="2" type="stmt"/>
+        <line num="50" count="1" type="stmt"/>
+        <line num="51" count="1" type="stmt"/>
+        <line num="53" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="56" count="1" type="stmt"/>
+        <line num="60" count="175" type="stmt"/>
+        <line num="76" count="76" type="stmt"/>
+        <line num="94" count="18" type="stmt"/>
+        <line num="103" count="33" type="stmt"/>
+        <line num="112" count="38" type="stmt"/>
+      </file>
+      <file name="forgot-password.module.css" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\pages\ForgotPassword\forgot-password.module.css">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="pages.History">
+      <metrics statements="6" coveredstatements="6" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="1"/>
+      <file name="History.jsx" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\pages\History\History.jsx">
+        <metrics statements="6" coveredstatements="6" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="1"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="8" count="2" type="stmt"/>
+        <line num="10" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+      </file>
+      <file name="history.module.css" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\pages\History\history.module.css">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="pages.Home">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="Home.jsx" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\pages\Home\Home.jsx">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="2" type="stmt"/>
+      </file>
+      <file name="home.module.css" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\pages\Home\home.module.css">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="pages.Intro">
+      <metrics statements="17" coveredstatements="17" conditionals="8" coveredconditionals="8" methods="8" coveredmethods="8"/>
+      <file name="Intro.jsx" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\pages\Intro\Intro.jsx">
+        <metrics statements="17" coveredstatements="17" conditionals="8" coveredconditionals="8" methods="8" coveredmethods="8"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="38" count="1" type="stmt"/>
+        <line num="39" count="11" type="stmt"/>
+        <line num="40" count="11" type="stmt"/>
+        <line num="42" count="11" type="stmt"/>
+        <line num="43" count="2" type="stmt"/>
+        <line num="44" count="2" type="stmt"/>
+        <line num="47" count="11" type="stmt"/>
+        <line num="48" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="49" count="1" type="stmt"/>
+        <line num="51" count="2" type="stmt"/>
+        <line num="55" count="11" type="stmt"/>
+        <line num="56" count="1" type="stmt"/>
+        <line num="59" count="11" type="stmt"/>
+        <line num="61" count="11" type="stmt"/>
+        <line num="77" count="66" type="stmt"/>
+        <line num="80" count="2" type="stmt"/>
+      </file>
+      <file name="intro.module.css" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\pages\Intro\intro.module.css">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="pages.Loading">
+      <metrics statements="28" coveredstatements="28" conditionals="9" coveredconditionals="9" methods="9" coveredmethods="8"/>
+      <file name="Loading.jsx" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\pages\Loading\Loading.jsx">
+        <metrics statements="28" coveredstatements="28" conditionals="9" coveredconditionals="9" methods="9" coveredmethods="8"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="16" count="10" type="stmt"/>
+        <line num="17" count="10" type="stmt"/>
+        <line num="18" count="10" type="stmt"/>
+        <line num="20" count="10" type="stmt"/>
+        <line num="21" count="5" type="stmt"/>
+        <line num="22" count="5" type="stmt"/>
+        <line num="24" count="5" type="stmt"/>
+        <line num="25" count="30" type="stmt"/>
+        <line num="26" count="30" type="stmt"/>
+        <line num="30" count="5" type="stmt"/>
+        <line num="31" count="30" type="stmt"/>
+        <line num="32" count="30" type="stmt"/>
+        <line num="33" count="30" type="stmt"/>
+        <line num="34" count="30" type="stmt"/>
+        <line num="35" count="30" type="stmt"/>
+        <line num="39" count="5" type="stmt"/>
+        <line num="40" count="5" type="stmt"/>
+        <line num="41" count="5" type="stmt"/>
+        <line num="43" count="5" type="stmt"/>
+        <line num="44" count="5" type="cond" truecount="5" falsecount="0"/>
+        <line num="45" count="1" type="stmt"/>
+        <line num="46" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="47" count="2" type="stmt"/>
+        <line num="49" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="50" count="2" type="stmt"/>
+        <line num="56" count="10" type="stmt"/>
+      </file>
+    </package>
+    <package name="pages.Profile">
+      <metrics statements="62" coveredstatements="52" conditionals="32" coveredconditionals="26" methods="15" coveredmethods="10"/>
+      <file name="Profile.jsx" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\pages\Profile\Profile.jsx">
+        <metrics statements="62" coveredstatements="52" conditionals="32" coveredconditionals="26" methods="15" coveredmethods="10"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="17" count="103" type="stmt"/>
+        <line num="18" count="103" type="stmt"/>
+        <line num="19" count="103" type="stmt"/>
+        <line num="21" count="103" type="stmt"/>
+        <line num="22" count="103" type="cond" truecount="1" falsecount="1"/>
+        <line num="23" count="103" type="stmt"/>
+        <line num="24" count="103" type="stmt"/>
+        <line num="25" count="103" type="stmt"/>
+        <line num="26" count="103" type="stmt"/>
+        <line num="27" count="103" type="stmt"/>
+        <line num="28" count="103" type="stmt"/>
+        <line num="29" count="103" type="stmt"/>
+        <line num="31" count="103" type="stmt"/>
+        <line num="32" count="12" type="cond" truecount="1" falsecount="1"/>
+        <line num="33" count="12" type="stmt"/>
+        <line num="34" count="12" type="stmt"/>
+        <line num="38" count="12" type="stmt"/>
+        <line num="44" count="103" type="cond" truecount="1" falsecount="1"/>
+        <line num="45" count="0" type="stmt"/>
+        <line num="48" count="103" type="stmt"/>
+        <line num="49" count="3" type="stmt"/>
+        <line num="50" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="51" count="1" type="stmt"/>
+        <line num="52" count="1" type="stmt"/>
+        <line num="54" count="2" type="stmt"/>
+        <line num="55" count="2" type="stmt"/>
+        <line num="56" count="1" type="stmt"/>
+        <line num="57" count="1" type="stmt"/>
+        <line num="58" count="1" type="stmt"/>
+        <line num="60" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="61" count="1" type="stmt"/>
+        <line num="63" count="0" type="stmt"/>
+        <line num="68" count="103" type="stmt"/>
+        <line num="69" count="0" type="stmt"/>
+        <line num="70" count="0" type="stmt"/>
+        <line num="71" count="0" type="stmt"/>
+        <line num="72" count="0" type="stmt"/>
+        <line num="73" count="0" type="stmt"/>
+        <line num="75" count="0" type="stmt"/>
+        <line num="79" count="103" type="stmt"/>
+        <line num="80" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="81" count="1" type="stmt"/>
+        <line num="82" count="1" type="stmt"/>
+        <line num="84" count="3" type="stmt"/>
+        <line num="85" count="3" type="stmt"/>
+        <line num="86" count="2" type="stmt"/>
+        <line num="87" count="2" type="stmt"/>
+        <line num="90" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="93" count="1" type="stmt"/>
+        <line num="97" count="103" type="stmt"/>
+        <line num="98" count="1" type="stmt"/>
+        <line num="99" count="1" type="stmt"/>
+        <line num="100" count="1" type="stmt"/>
+        <line num="103" count="103" type="stmt"/>
+        <line num="115" count="1" type="stmt"/>
+        <line num="128" count="26" type="stmt"/>
+        <line num="141" count="4" type="stmt"/>
+        <line num="171" count="5" type="stmt"/>
+        <line num="180" count="0" type="stmt"/>
+        <line num="184" count="0" type="stmt"/>
+        <line num="239" count="36" type="stmt"/>
+      </file>
+      <file name="profile.module.css" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\pages\Profile\profile.module.css">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="pages.ProfileReading">
+      <metrics statements="4" coveredstatements="4" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+      <file name="ProfileReading.jsx" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\pages\ProfileReading\ProfileReading.jsx">
+        <metrics statements="4" coveredstatements="4" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="9" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+      </file>
+      <file name="profile-reading.module.css" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\pages\ProfileReading\profile-reading.module.css">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="pages.Register">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="Register.jsx" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\pages\Register\Register.jsx">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="6" count="2" type="stmt"/>
+      </file>
+      <file name="register.module.css" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\pages\Register\register.module.css">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="pages.ResetPassword">
+      <metrics statements="27" coveredstatements="27" conditionals="8" coveredconditionals="7" methods="4" coveredmethods="4"/>
+      <file name="ResetPassword.jsx" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\pages\ResetPassword\ResetPassword.jsx">
+        <metrics statements="27" coveredstatements="27" conditionals="8" coveredconditionals="7" methods="4" coveredmethods="4"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="14" type="stmt"/>
+        <line num="9" count="14" type="stmt"/>
+        <line num="10" count="14" type="stmt"/>
+        <line num="11" count="14" type="stmt"/>
+        <line num="12" count="14" type="stmt"/>
+        <line num="14" count="14" type="stmt"/>
+        <line num="16" count="14" type="stmt"/>
+        <line num="17" count="5" type="stmt"/>
+        <line num="19" count="5" type="cond" truecount="2" falsecount="0"/>
+        <line num="20" count="1" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="23" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="24" count="1" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
+        <line num="27" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="28" count="1" type="stmt"/>
+        <line num="29" count="1" type="stmt"/>
+        <line num="32" count="2" type="stmt"/>
+        <line num="33" count="2" type="stmt"/>
+        <line num="34" count="2" type="stmt"/>
+        <line num="35" count="1" type="stmt"/>
+        <line num="36" count="1" type="stmt"/>
+        <line num="38" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="42" count="14" type="stmt"/>
+        <line num="52" count="4" type="stmt"/>
+        <line num="60" count="4" type="stmt"/>
+      </file>
+      <file name="reset-password.module.css" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\pages\ResetPassword\reset-password.module.css">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="pages.Start">
+      <metrics statements="8" coveredstatements="8" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+      <file name="Start.jsx" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\pages\Start\Start.jsx">
+        <metrics statements="8" coveredstatements="8" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="3" type="stmt"/>
+        <line num="9" count="3" type="stmt"/>
+        <line num="10" count="3" type="stmt"/>
+        <line num="11" count="3" type="stmt"/>
+        <line num="13" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="17" count="2" type="stmt"/>
+      </file>
+      <file name="start.module.css" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\pages\Start\start.module.css">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="pages.TarotResults">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="TarotResult.jsx" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\pages\TarotResults\TarotResult.jsx">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="8" count="2" type="stmt"/>
+      </file>
+      <file name="tarot-results.module.css" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\pages\TarotResults\tarot-results.module.css">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="pages.VerifyAccount">
+      <metrics statements="19" coveredstatements="19" conditionals="12" coveredconditionals="11" methods="5" coveredmethods="5"/>
+      <file name="VerifyAccount.jsx" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\pages\VerifyAccount\VerifyAccount.jsx">
+        <metrics statements="19" coveredstatements="19" conditionals="12" coveredconditionals="11" methods="5" coveredmethods="5"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="9" type="stmt"/>
+        <line num="9" count="9" type="stmt"/>
+        <line num="10" count="9" type="stmt"/>
+        <line num="11" count="9" type="stmt"/>
+        <line num="13" count="9" type="stmt"/>
+        <line num="15" count="9" type="stmt"/>
+        <line num="16" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="21" count="2" type="stmt"/>
+        <line num="22" count="2" type="stmt"/>
+        <line num="23" count="2" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
+        <line num="26" count="1" type="stmt"/>
+        <line num="27" count="1" type="stmt"/>
+        <line num="30" count="1" type="stmt"/>
+        <line num="31" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="35" count="9" type="stmt"/>
+      </file>
+      <file name="verify-account.module.css" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\pages\VerifyAccount\verify-account.module.css">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="router">
+      <metrics statements="7" coveredstatements="7" conditionals="7" coveredconditionals="7" methods="1" coveredmethods="1"/>
+      <file name="PrivateRoute.jsx" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\router\PrivateRoute.jsx">
+        <metrics statements="7" coveredstatements="7" conditionals="7" coveredconditionals="7" methods="1" coveredmethods="1"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="4" type="stmt"/>
+        <line num="7" count="4" type="stmt"/>
+        <line num="9" count="4" type="cond" truecount="5" falsecount="0"/>
+        <line num="10" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="11" count="3" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="services">
+      <metrics statements="132" coveredstatements="116" conditionals="17" coveredconditionals="15" methods="39" coveredmethods="34"/>
+      <file name="api.jsx" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\services\api.jsx">
+        <metrics statements="15" coveredstatements="1" conditionals="1" coveredconditionals="0" methods="4" coveredmethods="0"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="4" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="30" count="0" type="stmt"/>
+        <line num="31" count="0" type="stmt"/>
+        <line num="35" count="0" type="stmt"/>
+      </file>
+      <file name="apiAccount.jsx" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\services\apiAccount.jsx">
+        <metrics statements="32" coveredstatements="32" conditionals="0" coveredconditionals="0" methods="11" coveredmethods="11"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="24" count="1" type="stmt"/>
+        <line num="27" count="1" type="stmt"/>
+        <line num="28" count="1" type="stmt"/>
+        <line num="31" count="1" type="stmt"/>
+        <line num="34" count="1" type="stmt"/>
+        <line num="35" count="1" type="stmt"/>
+        <line num="38" count="1" type="stmt"/>
+        <line num="41" count="1" type="stmt"/>
+        <line num="42" count="1" type="stmt"/>
+        <line num="47" count="1" type="stmt"/>
+        <line num="50" count="1" type="stmt"/>
+        <line num="51" count="1" type="stmt"/>
+        <line num="54" count="1" type="stmt"/>
+        <line num="57" count="1" type="stmt"/>
+        <line num="58" count="1" type="stmt"/>
+        <line num="61" count="1" type="stmt"/>
+        <line num="64" count="1" type="stmt"/>
+        <line num="65" count="1" type="stmt"/>
+        <line num="68" count="1" type="stmt"/>
+        <line num="71" count="1" type="stmt"/>
+      </file>
+      <file name="apiInterpretation.js" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\services\apiInterpretation.js">
+        <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+      </file>
+      <file name="apiProgress.js" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\services\apiProgress.js">
+        <metrics statements="11" coveredstatements="11" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="15" count="2" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+      </file>
+      <file name="apiReading.jsx" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\services\apiReading.jsx">
+        <metrics statements="23" coveredstatements="21" conditionals="1" coveredconditionals="0" methods="8" coveredmethods="7"/>
+        <line num="3" count="7" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="24" count="1" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
+        <line num="28" count="1" type="stmt"/>
+        <line num="31" count="1" type="stmt"/>
+        <line num="32" count="1" type="stmt"/>
+        <line num="33" count="1" type="stmt"/>
+        <line num="36" count="1" type="cond" truecount="0" falsecount="1"/>
+        <line num="37" count="0" type="stmt"/>
+        <line num="38" count="0" type="stmt"/>
+        <line num="41" count="1" type="stmt"/>
+      </file>
+      <file name="apiSakura.js" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\services\apiSakura.js">
+        <metrics statements="15" coveredstatements="15" conditionals="1" coveredconditionals="1" methods="4" coveredmethods="4"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="4" count="2" type="cond" truecount="1" falsecount="0"/>
+        <line num="5" count="6" type="stmt"/>
+        <line num="6" count="6" type="stmt"/>
+        <line num="7" count="4" type="stmt"/>
+        <line num="15" count="2" type="stmt"/>
+        <line num="16" count="2" type="stmt"/>
+        <line num="20" count="2" type="stmt"/>
+        <line num="21" count="4" type="stmt"/>
+        <line num="22" count="4" type="stmt"/>
+        <line num="23" count="2" type="stmt"/>
+        <line num="24" count="2" type="stmt"/>
+        <line num="30" count="2" type="stmt"/>
+        <line num="31" count="2" type="stmt"/>
+        <line num="35" count="2" type="stmt"/>
+      </file>
+      <file name="apiSave.jsx" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\services\apiSave.jsx">
+        <metrics statements="16" coveredstatements="16" conditionals="4" coveredconditionals="4" methods="3" coveredmethods="3"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="4" type="stmt"/>
+        <line num="9" count="4" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="12" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="14" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="19" count="3" type="stmt"/>
+        <line num="24" count="1" type="stmt"/>
+        <line num="25" count="2" type="stmt"/>
+        <line num="26" count="1" type="stmt"/>
+        <line num="29" count="1" type="stmt"/>
+      </file>
+      <file name="httpClient.js" path="C:\Users\jenny\OneDrive\Escritorio\ejercicios\VELVET\Velvet_Front\src\services\httpClient.js">
+        <metrics statements="15" coveredstatements="15" conditionals="10" coveredconditionals="10" methods="3" coveredmethods="3"/>
+        <line num="3" count="8" type="stmt"/>
+        <line num="7" count="8" type="stmt"/>
+        <line num="8" count="2" type="stmt"/>
+        <line num="9" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="12" count="2" type="stmt"/>
+        <line num="15" count="8" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="18" count="5" type="cond" truecount="4" falsecount="0"/>
+        <line num="19" count="4" type="stmt"/>
+        <line num="20" count="4" type="stmt"/>
+        <line num="21" count="4" type="stmt"/>
+        <line num="22" count="4" type="cond" truecount="4" falsecount="0"/>
+        <line num="23" count="2" type="stmt"/>
+        <line num="26" count="5" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>

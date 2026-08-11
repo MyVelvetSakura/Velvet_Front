@@ -1,0 +1,302 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`InterpretationModalBackground Component > coincide con la captura de estructura (Snapshot Test) 1`] = `
+<svg
+  class="_background_655d71"
+  preserveAspectRatio="xMidYMid slice"
+  viewBox="0 0 400 500"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <rect
+    class="_frame_655d71"
+    height="480"
+    rx="16"
+    width="380"
+    x="10"
+    y="10"
+  />
+  <rect
+    class="_frameInner_655d71"
+    height="460"
+    rx="12"
+    stroke-dasharray="3 6"
+    width="360"
+    x="20"
+    y="20"
+  />
+  <g
+    class="_centerSigil_655d71"
+    transform="translate(200,250)"
+  >
+    <line
+      x1="0"
+      x2="90"
+      y1="0"
+      y2="0"
+    />
+    <line
+      x1="0"
+      x2="45.00000000000001"
+      y1="0"
+      y2="77.94228634059948"
+    />
+    <line
+      x1="0"
+      x2="-44.99999999999998"
+      y1="0"
+      y2="77.94228634059948"
+    />
+    <line
+      x1="0"
+      x2="-90"
+      y1="0"
+      y2="1.1021821192326179e-14"
+    />
+    <line
+      x1="0"
+      x2="-45.00000000000004"
+      y1="0"
+      y2="-77.94228634059947"
+    />
+    <line
+      x1="0"
+      x2="45.00000000000001"
+      y1="0"
+      y2="-77.94228634059948"
+    />
+    <circle
+      class="_centerDot_655d71"
+      r="6"
+    />
+  </g>
+  <g
+    class="_sakuraFlower_655d71"
+    transform="translate(55,60)"
+  >
+    <ellipse
+      cx="12"
+      cy="0"
+      rx="7"
+      ry="10"
+      transform="rotate(90, 12, 0)"
+    />
+    <ellipse
+      cx="3.7082039324993694"
+      cy="11.412678195541842"
+      rx="7"
+      ry="10"
+      transform="rotate(162, 3.7082039324993694, 11.412678195541842)"
+    />
+    <ellipse
+      cx="-9.708203932499368"
+      cy="7.0534230275096785"
+      rx="7"
+      ry="10"
+      transform="rotate(234, -9.708203932499368, 7.0534230275096785)"
+    />
+    <ellipse
+      cx="-9.70820393249937"
+      cy="-7.053423027509677"
+      rx="7"
+      ry="10"
+      transform="rotate(306, -9.70820393249937, -7.053423027509677)"
+    />
+    <ellipse
+      cx="3.7082039324993668"
+      cy="-11.412678195541844"
+      rx="7"
+      ry="10"
+      transform="rotate(378, 3.7082039324993668, -11.412678195541844)"
+    />
+    <circle
+      class="_flowerCenter_655d71"
+      r="4"
+    />
+  </g>
+  <g
+    class="_sakuraFlower_655d71"
+    transform="translate(345,60)"
+  >
+    <ellipse
+      cx="12"
+      cy="0"
+      rx="7"
+      ry="10"
+      transform="rotate(90, 12, 0)"
+    />
+    <ellipse
+      cx="3.7082039324993694"
+      cy="11.412678195541842"
+      rx="7"
+      ry="10"
+      transform="rotate(162, 3.7082039324993694, 11.412678195541842)"
+    />
+    <ellipse
+      cx="-9.708203932499368"
+      cy="7.0534230275096785"
+      rx="7"
+      ry="10"
+      transform="rotate(234, -9.708203932499368, 7.0534230275096785)"
+    />
+    <ellipse
+      cx="-9.70820393249937"
+      cy="-7.053423027509677"
+      rx="7"
+      ry="10"
+      transform="rotate(306, -9.70820393249937, -7.053423027509677)"
+    />
+    <ellipse
+      cx="3.7082039324993668"
+      cy="-11.412678195541844"
+      rx="7"
+      ry="10"
+      transform="rotate(378, 3.7082039324993668, -11.412678195541844)"
+    />
+    <circle
+      class="_flowerCenter_655d71"
+      r="4"
+    />
+  </g>
+  <g
+    class="_sakuraFlower_655d71"
+    transform="translate(55,440)"
+  >
+    <ellipse
+      cx="12"
+      cy="0"
+      rx="7"
+      ry="10"
+      transform="rotate(90, 12, 0)"
+    />
+    <ellipse
+      cx="3.7082039324993694"
+      cy="11.412678195541842"
+      rx="7"
+      ry="10"
+      transform="rotate(162, 3.7082039324993694, 11.412678195541842)"
+    />
+    <ellipse
+      cx="-9.708203932499368"
+      cy="7.0534230275096785"
+      rx="7"
+      ry="10"
+      transform="rotate(234, -9.708203932499368, 7.0534230275096785)"
+    />
+    <ellipse
+      cx="-9.70820393249937"
+      cy="-7.053423027509677"
+      rx="7"
+      ry="10"
+      transform="rotate(306, -9.70820393249937, -7.053423027509677)"
+    />
+    <ellipse
+      cx="3.7082039324993668"
+      cy="-11.412678195541844"
+      rx="7"
+      ry="10"
+      transform="rotate(378, 3.7082039324993668, -11.412678195541844)"
+    />
+    <circle
+      class="_flowerCenter_655d71"
+      r="4"
+    />
+  </g>
+  <g
+    class="_sakuraFlower_655d71"
+    transform="translate(345,440)"
+  >
+    <ellipse
+      cx="12"
+      cy="0"
+      rx="7"
+      ry="10"
+      transform="rotate(90, 12, 0)"
+    />
+    <ellipse
+      cx="3.7082039324993694"
+      cy="11.412678195541842"
+      rx="7"
+      ry="10"
+      transform="rotate(162, 3.7082039324993694, 11.412678195541842)"
+    />
+    <ellipse
+      cx="-9.708203932499368"
+      cy="7.0534230275096785"
+      rx="7"
+      ry="10"
+      transform="rotate(234, -9.708203932499368, 7.0534230275096785)"
+    />
+    <ellipse
+      cx="-9.70820393249937"
+      cy="-7.053423027509677"
+      rx="7"
+      ry="10"
+      transform="rotate(306, -9.70820393249937, -7.053423027509677)"
+    />
+    <ellipse
+      cx="3.7082039324993668"
+      cy="-11.412678195541844"
+      rx="7"
+      ry="10"
+      transform="rotate(378, 3.7082039324993668, -11.412678195541844)"
+    />
+    <circle
+      class="_flowerCenter_655d71"
+      r="4"
+    />
+  </g>
+  <g
+    class="_tinyStar_655d71"
+    transform="translate(100,130)"
+  >
+    <path
+      d="M 0,-6 L 1.5,-1.5 L 6,0 L 1.5,1.5 L 0,6 L -1.5,1.5 L -6,0 L -1.5,-1.5 Z"
+    />
+  </g>
+  <g
+    class="_tinyStar_655d71"
+    transform="translate(300,150)"
+  >
+    <path
+      d="M 0,-6 L 1.5,-1.5 L 6,0 L 1.5,1.5 L 0,6 L -1.5,1.5 L -6,0 L -1.5,-1.5 Z"
+    />
+  </g>
+  <g
+    class="_tinyStar_655d71"
+    transform="translate(90,370)"
+  >
+    <path
+      d="M 0,-6 L 1.5,-1.5 L 6,0 L 1.5,1.5 L 0,6 L -1.5,1.5 L -6,0 L -1.5,-1.5 Z"
+    />
+  </g>
+  <g
+    class="_tinyStar_655d71"
+    transform="translate(310,350)"
+  >
+    <path
+      d="M 0,-6 L 1.5,-1.5 L 6,0 L 1.5,1.5 L 0,6 L -1.5,1.5 L -6,0 L -1.5,-1.5 Z"
+    />
+  </g>
+  <g
+    class="_tinyStar_655d71"
+    transform="translate(200,90)"
+  >
+    <path
+      d="M 0,-6 L 1.5,-1.5 L 6,0 L 1.5,1.5 L 0,6 L -1.5,1.5 L -6,0 L -1.5,-1.5 Z"
+    />
+  </g>
+  <g
+    class="_tinyStar_655d71"
+    transform="translate(200,410)"
+  >
+    <path
+      d="M 0,-6 L 1.5,-1.5 L 6,0 L 1.5,1.5 L 0,6 L -1.5,1.5 L -6,0 L -1.5,-1.5 Z"
+    />
+  </g>
+  <path
+    class="_moon_655d71"
+    d="M -9,-12 A 14,14 0 1 0 -9,12 A 10,10 0 1 1 -9,-12 Z"
+    transform="translate(200,50)"
+  />
+</svg>
+`;

@@ -8,7 +8,7 @@ const VerifyAccount = () => {
   const [searchParams] = useSearchParams();
   const navigate = useNavigate();
   const { toast } = useToast();
-  const [status, setStatus] = useState("pendiente"); // pendiente | verificando | ok | error
+  const [status, setStatus] = useState("pendiente");
 
   const token = searchParams.get("token");
 

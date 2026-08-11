@@ -1,7 +1,7 @@
 import styles from "./profile-reading.module.css";
 import SavedReading from "../../components/organisms/SavedReading/SavedReading";
 import { useLocation } from "react-router";
-
+import Profile from "../Profile/Profile";
 
 export default function ProfileReading() {
   const { state } = useLocation();
@@ -17,6 +17,6 @@ export default function ProfileReading() {
       </section>
     );
   } else {
-    return <ProfileHome />;
+    return <Profile />;
   }
 }
