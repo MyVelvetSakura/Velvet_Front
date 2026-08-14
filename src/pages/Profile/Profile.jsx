@@ -8,7 +8,7 @@ import AvatarGallery from "../../components/molecules/AvatarGallery/AvatarGaller
 import ProgressBar from "../../components/molecules/ProgressBar/ProgressBar";
 import AchievementsList from "../../components/molecules/AchievementsList/AchievementsList";
 import { getAvatarSrc } from "../../constants/avatars";
-import CheckButton from "../../components/atoms/checkButton/CheckButton";
+import CheckButton from "../../components/atoms/CheckButton/CheckButton";
 import EditButton from "../../components/atoms/EditButton/EditButton";
 import styles from "./profile.module.css";
 import PasswordInput from "../../components/atoms/PasswordInput/PasswordInput";
