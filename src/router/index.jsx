@@ -6,7 +6,7 @@ import Register from "../pages/Register/Register";
 import Info from "../pages/DataResults/DataResults";
 import Start from "../pages/Start/Start";
 import TarotResult from "../pages/TarotResults/TarotResult";
-import History from "../pages/History/History";
+import History from "../pages/history/History";
 import ProfileReading from "../pages/ProfileReading/ProfileReading";
 import Loading from "../pages/Loading/Loading";
 import VerifyAccount from "../pages/VerifyAccount/VerifyAccount";
