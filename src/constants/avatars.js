@@ -5,7 +5,7 @@ import meiling2 from "../assets/avatars/meiling2.png";
 import sakura1 from "../assets/avatars/sakura1.png";
 import sakura2 from "../assets/avatars/sakura2.png";
 import syaoran1 from "../assets/avatars/Syaoran1.png";
-import syaoran2 from "../assets/avatars/Syaoran2.png"
+import syaoran2 from "../assets/avatars/syaoran2.png"
 import tomoyo1 from "../assets/avatars/tomoyo1.png";
 import tomoyo2 from "../assets/avatars/tomoyo2.png";
 import yukito1 from "../assets/avatars/yukito1.png";
