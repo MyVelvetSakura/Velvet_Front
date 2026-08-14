@@ -1,5 +1,5 @@
 import useAuth from "../../hooks/useAuth";
-import HistoryCards from "../../components/organisms/historyCards/HistoryCards";
+import HistoryCards from "../../components/organisms/HistoryCards/HistoryCards";
 import ScrollToTopHistory from "../../components/atoms/ScrollToTopHistory/ScrollToTopHistory";
 import styles from "./history.module.css";
 
