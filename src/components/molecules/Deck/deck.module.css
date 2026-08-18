@@ -166,7 +166,7 @@
     transform: rotateY(
         calc((var(--position) - 1) * (360 / var(--quantity) * 1deg))
       )
-      translateZ(2000px);
+      /*translateZ(2000px);*/ translateZ(380px);
     transition: all 0.3s linear;
   }
 
@@ -181,7 +181,7 @@
     transform: rotateY(
         calc((var(--position) - 1) * (360 / var(--quantity) * 1deg))
       )
-      rotateX(10deg) translateZ(25dvw) scale(1.2);
+      /*rotateX(10deg) translateZ(25dvw) scale(1.2);*/ rotateX(10deg) translateZ(420px) scale(1.15);
     transform-origin: center;
     z-index: 1;
     cursor: pointer;
