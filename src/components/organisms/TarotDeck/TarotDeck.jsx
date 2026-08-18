@@ -45,19 +45,20 @@ const TarotDeck = ({ user }) => {
   }, []);
 
   useEffect(() => {
-    if (!past || !present || !future) return;
+  if (!past || !present || !future) return;
 
-    setLoadingInterpretation(true);
-    const db = apiInterpretation();
-    db.generate(question || "", past.id, present.id, future.id)
-      .then((res) => setInterpretation(res.interpretation))
-      .catch(() =>
-        setInterpretation(
-          "No se pudo generar la interpretación en este momento.",
-        ),
-      )
-      .finally(() => setLoadingInterpretation(false));
-  }, []);
+  setLoadingInterpretation(true);
+  const db = apiInterpretation();
+  db.generate(question || "", past.id, present.id, future.id)
+    .then((res) => setInterpretation(res.interpretation))
+    .catch((err) => {
+      console.error("ERROR EN API INTERPRETATION:", err);
+      setInterpretation(
+        "No se pudo generar la interpretación en este momento.",
+      );
+    })
+    .finally(() => setLoadingInterpretation(false));
+}, []);
 
   if (!state) {
     return <p>No hay cartas seleccionadas</p>;
