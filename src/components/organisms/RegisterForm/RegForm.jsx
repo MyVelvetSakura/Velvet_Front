@@ -16,13 +16,16 @@ function RegForm() {
     password: "",
     avatarKey: "default",
   });
-  const capitalize = (str) => str.charAt(0).toUpperCase() + str.slice(1);
   const [isAvatarModalOpen, setIsAvatarModalOpen] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+
   const { toast } = useToast();
   const dbAccount = apiAccount();
   const navigate = useNavigate();
+
   const patterName = /^\S+$/;
   const patternEmail = /^([A-Za-z0-9_-]+\@[\da-z\.-]+\.[a-z\.]{2,6})$/;
+
   const [formErrors, setFormErrors] = useState({
     name: "",
     email: "",
@@ -43,6 +46,7 @@ function RegForm() {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
+
     if (!form.name.trim() || !form.email || !form.password) {
       toast.error("Se requieren todos los campos");
       return;
@@ -60,12 +64,23 @@ function RegForm() {
       return;
     }
 
+    setIsLoading(true);
+
     try {
       const res = await dbAccount.addAccount(form);
       toast.success("¡Cuenta creada correctamente!");
       navigate("/info", { state: res });
     } catch (error) {
-      toast.error(error.response?.data || "Error al registrar la cuenta");
+      const errorMessage =
+        typeof error.response?.data === "string"
+          ? error.response.data
+          : error.response?.data?.message ||
+            error.response?.data?.error ||
+            "Error al registrar la cuenta";
+
+      toast.error(errorMessage);
+    } finally {
+      setIsLoading(false);
     }
   };
 
@@ -75,11 +90,13 @@ function RegForm() {
     if (!patterName.test(value)) return "No se aceptan espacios en blanco";
     return "";
   };
+
   const validateEmail = (value) => {
     if (value.trim() === "") return "Campo vacío";
     if (!patternEmail.test(value)) return "Email no válido";
     return "";
   };
+
   const validatePassword = (value) => {
     if (value.trim() === "") return "Campo vacío";
     if (value.trim().length < 8) return "Debe tener al menos 8 carácteres";
@@ -103,6 +120,7 @@ function RegForm() {
             className={styles.input_login}
             onChange={handleChange}
             placeholder="Alias"
+            disabled={isLoading}
           />
           <span
             id="nameError"
@@ -125,6 +143,7 @@ function RegForm() {
             className={styles.input_login}
             onChange={handleChange}
             placeholder="tucorreo@mail.com"
+            disabled={isLoading}
           />
           <span
             id="emailError"
@@ -144,6 +163,7 @@ function RegForm() {
             onChange={handleChange}
             placeholder="Contraseña"
             className={styles.input_login}
+            disabled={isLoading}
           />
           <span
             id="passError"
@@ -159,6 +179,7 @@ function RegForm() {
             type="button"
             className={styles.avatarPreviewBtn}
             onClick={() => setIsAvatarModalOpen(true)}
+            disabled={isLoading}
           >
             <img
               src={AVATARS[form.avatarKey]}
@@ -174,12 +195,18 @@ function RegForm() {
             type="button"
             className={styles.cancel_btn}
             onClick={handleCancel}
+            disabled={isLoading}
           >
             Volver
           </button>
-          <Button BtnClass="subm_btn" text="Confirmar" path="" />
+          <Button
+            BtnClass="subm_btn"
+            text={isLoading ? "Cargando..." : "Confirmar"}
+            disabled={isLoading}
+          />
         </div>
       </form>
+
       {isAvatarModalOpen && (
         <Modal
           title="Elige tu avatar"
