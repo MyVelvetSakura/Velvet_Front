@@ -4,6 +4,7 @@ import ReadingCard from "../../molecules/ReadingCard/ReadingCard";
 import styles from "./history-cards.module.css"
 import Button from "../../atoms/Button/Button";
 import DropButton from "../../molecules/DropButton/DropButton";
+import notFoundImg from "../../../assets/images/notfound.png";
 
 const ITEMS_PER_PAGE = 15;
 
@@ -86,7 +87,7 @@ return(
     </section>
     ):(
          <section className= {styles.no_cards}>
-            <img className={styles.img_no_cards} src="/src/assets/images/notfound.png" alt="no hay resultados"/>
+            <img className={styles.img_no_cards} src={notFoundImg} alt="no hay resultados"/>
             <p> No hay lecturas guardadas. Revela ahora tu destino.</p>
             <Button BtnClass="subm_btn" path="/readings" text= "Inicio" />
          </section>
